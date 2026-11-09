@@ -42,14 +42,16 @@ async function processImages() {
     const widths = spec.widths.filter((x) => x <= w);
     if (!widths.includes(w) && spec.widths.some((x) => x > w)) widths.push(w);
     for (const width of widths) {
-      const resized = sharp(base).resize({ width, withoutEnlargement: true });
+      const resized = sharp(base)
+        .resize({ width, withoutEnlargement: true, kernel: 'lanczos3' })
+        .sharpen({ sigma: width < w ? 0.6 : 0.3 });
       await resized
         .clone()
-        .avif({ quality: 52, effort: 6 })
+        .avif({ quality: 64, effort: 6, chromaSubsampling: '4:4:4' })
         .toFile(join(outImg, `${key}-${width}.avif`));
       await resized
         .clone()
-        .webp({ quality: 74, effort: 6 })
+        .webp({ quality: 84, effort: 6, smartSubsample: true })
         .toFile(join(outImg, `${key}-${width}.webp`));
     }
     const lqipBuf = await sharp(base).resize({ width: 16 }).blur(1.2).webp({ quality: 40 }).toBuffer();

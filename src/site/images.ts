@@ -29,20 +29,20 @@ export const imageSpecs = {
     crop: [0.218, 0, 0.564, 1],
     widths: [320, 480, 720],
   },
-  podium: { source: 'retratos/alex-perfil.png', widths: [400, 800] },
+  podium: { source: 'retratos/alex-perfil.png', widths: [400, 600, 800] },
 
   // Palestra em inglês · São Paulo, SP
   talkEnglish: { source: 'palestras/kuraray-4.jpeg', widths: [640, 960, 1280, 1600] },
-  talkEnergy: { source: 'palestras/kuraray-2.jpeg', widths: [480, 800, 1200] },
-  talkQuestion: { source: 'palestras/kuraray-7.jpeg', widths: [480, 800, 1200] },
-  talkListening: { source: 'palestras/kuraray-5.jpeg', widths: [480, 800, 1200] },
-  talkRoom: { source: 'palestras/kuraray-6.jpeg', widths: [640, 960, 1600] },
-  talkWalk: { source: 'palestras/kuraray-1.jpeg', widths: [640, 960, 1600] },
-  talkMic: { source: 'palestras/kuraray-3.jpeg', widths: [480, 800, 1200] },
+  talkEnergy: { source: 'palestras/kuraray-2.jpeg', widths: [480, 800, 1200, 1600] },
+  talkQuestion: { source: 'palestras/kuraray-7.jpeg', widths: [480, 800, 1200, 1600] },
+  talkListening: { source: 'palestras/kuraray-5.jpeg', widths: [480, 800, 1200, 1600] },
+  talkRoom: { source: 'palestras/kuraray-6.jpeg', widths: [640, 960, 1280, 1600] },
+  talkWalk: { source: 'palestras/kuraray-1.jpeg', widths: [640, 960, 1280, 1600] },
+  talkMic: { source: 'palestras/kuraray-3.jpeg', widths: [480, 800, 1200, 1600] },
 
   // Palestra de inteligência emocional · Valinhos, SP
-  valinhosGroup: { source: 'palestras/voilier-grupo.jpeg', widths: [640, 960, 1600] },
-  valinhosPortrait: { source: 'palestras/voilier-perfil.jpeg', widths: [400, 640, 1000] },
+  valinhosGroup: { source: 'palestras/voilier-grupo.jpeg', widths: [640, 960, 1280, 1600] },
+  valinhosPortrait: { source: 'palestras/voilier-perfil.jpeg', widths: [400, 640, 1000, 1254] },
 } satisfies Record<string, ImageSpec>;
 
 export type ImageKey = keyof typeof imageSpecs;

@@ -74,6 +74,7 @@
     "height": 800,
     "widths": [
       400,
+      600,
       800
     ],
     "lqip": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAwAgCdASoQABAAA4BaJZQCw7EQ/G1jiUmTgAD+954VWl+g2lmSwyeYiMcGYHJ8mHFeWPlY2EgAAA=="
@@ -95,7 +96,8 @@
     "widths": [
       480,
       800,
-      1200
+      1200,
+      1600
     ],
     "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQAAsAA4BaJZQCdACyn05g+CgAAP4j5lJG0je7iu+a4Sx7z6nRvjTFXpuIAAAA"
   },
@@ -105,7 +107,8 @@
     "widths": [
       480,
       800,
-      1200
+      1200,
+      1600
     ],
     "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAsAA4BaJYwCdACp5+twAAD8oelOgi1u5OREkGRnucHB95ugCjxMQ5OnAAAA"
   },
@@ -115,7 +118,8 @@
     "widths": [
       480,
       800,
-      1200
+      1200,
+      1600
     ],
     "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQAAsAA4BaJYwCdACySuPnAACoLB9d0+wV3ae5f1RcvZCOpoPGYQTQAAA="
   },
@@ -125,6 +129,7 @@
     "widths": [
       640,
       960,
+      1280,
       1600
     ],
     "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQAAsAA4BaJZQCdADQ+qzvMiAA/bfYGgARnpQ10Nhe+RravntJngeaVcAAAA=="
@@ -135,6 +140,7 @@
     "widths": [
       640,
       960,
+      1280,
       1600
     ],
     "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAsAA4BaJYwCdACNkMjAAP6iSO/fEwrUeqY4sz0bvl/j1MzYTGo5DL+AMNZTmaHPngAA"
@@ -145,7 +151,8 @@
     "widths": [
       480,
       800,
-      1200
+      1200,
+      1600
     ],
     "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAsAA4BaJYwCdADdGZ/H6YAA/OAM5rUOITAUriw6u36PriG+lb5TUNdD5ESqqkZGdeAA"
   },
@@ -155,6 +162,7 @@
     "widths": [
       640,
       960,
+      1280,
       1600
     ],
     "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoQAAsAA4BaJQBOgBMcS3AA8l0sirs0KWOQ/J2VV/eWKU9prYZFYTCuIn4AAA=="
@@ -165,7 +173,8 @@
     "widths": [
       400,
       640,
-      1000
+      1000,
+      1254
     ],
     "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQABAAA4BaJYwCdADdKesHzLcAAP75F8Dmc966hk6r1VV5qLaaI6h7e69f7wjdhDEMEIGGCD6AAA=="
   }

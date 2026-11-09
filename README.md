@@ -24,6 +24,7 @@ npm run lint           # Biome (lint + formatação)
 npm test               # Vitest (requer build antes para os testes de HTML)
 npm run check          # tudo acima, na ordem
 npm run media          # re-otimiza imagens/vídeos a partir de materiais/originais (fora do Git)
+# Com `npm run dev` aberto, o Wrangler já reconstrói ao salvar: não rode `npm run build` em paralelo.
 npm run deploy         # build + wrangler deploy (use só no lançamento)
 ```
 
@@ -110,7 +111,7 @@ Defina `PUBLIC_GTM_ID` no ambiente de build. Com ele, o site mostra o aviso de c
 
 ## Performance e acessibilidade
 
-- Imagens AVIF/WebP com `srcset`, dimensões fixas, placeholder borrado inline, hero com `preload` + `fetchpriority=high`, demais `lazy`.
+- Imagens AVIF (q64, 4:4:4) e WebP (q84) com nitidez leve, `srcset` até 1600 px e `sizes` calculado para o recorte real de cada foto (`object-fit: cover`), dimensões fixas, placeholder borrado inline, hero com `preload` + `fetchpriority=high`, demais `lazy`.
 - Fontes auto-hospedadas (Bodoni Moda 500 + Schibsted Grotesk variável, subset latino, ~79 KB), `preload`, `font-display: swap` e fallbacks com métricas ajustadas.
 - CSS inline (sem requisição bloqueante), um módulo JS com hash e cache imutável, Speculation Rules (pré-renderização ao passar o mouse).
 - Animações de entrada em CSS puro (não atrasam o LCP); revelação ao rolar, abertura de foto e linha das etapas via JS leve; tudo desligado com `prefers-reduced-motion`.

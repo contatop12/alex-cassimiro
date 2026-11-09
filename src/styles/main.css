@@ -697,6 +697,13 @@ body.menu-open {
 .phero-media .pic img {
   aspect-ratio: 5 / 4;
 }
+.phero-media .pic img {
+  object-position: 50% 30%;
+}
+.phero-media.phero-media--tall .pic img {
+  aspect-ratio: 4 / 5;
+  object-position: 50% 15%;
+}
 .hero-tag {
   position: absolute;
   left: -18px;
