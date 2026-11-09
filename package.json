@@ -1,0 +1,39 @@
+{
+  "name": "alex-cassimiro-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional de Alex Cassimiro — palestras corporativas, trilhas de liderança e consultoria. HTML estático gerado em TypeScript, servido por Cloudflare Workers.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "media": "tsx scripts/media.ts",
+    "build": "tsx scripts/build.ts",
+    "dev": "npm run build && wrangler dev",
+    "preview": "npm run build && wrangler dev --port 8790",
+    "deploy": "npm run build && wrangler deploy",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm run build && npm run test",
+    "cf-typegen": "wrangler types src/worker/worker-configuration.d.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6",
+    "@cloudflare/workers-types": "^5.20261109.1",
+    "@fontsource-variable/schibsted-grotesk": "^5.3.0",
+    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource/schibsted-grotesk": "^5.3.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "satori": "^0.63.2",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.158.0"
+  }
+}

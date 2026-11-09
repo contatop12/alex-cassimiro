@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "alex-cassimiro",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-11-09",
+  // Site estático gerado em ./dist por `npm run build`.
+  // O Worker só roda primeiro para a API do formulário e para o robots.txt (que muda na prévia).
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": ["/api/*", "/robots.txt"]
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "traces": { "enabled": true, "head_sampling_rate": 0.2 }
+  },
+  "vars": {
+    "SITE_URL": "https://alexcassimiro.com.br",
+    "LEAD_TO_EMAIL": "oalexcassimiro@gmail.com",
+    "LEAD_FROM_EMAIL": ""
+  },
+  // Limite de envios do formulário por IP (período aceito: 10 ou 60 s)
+  "ratelimits": [
+    {
+      "name": "LEAD_RATE_LIMITER",
+      "namespace_id": "4101",
+      "simple": { "limit": 4, "period": 60 }
+    }
+  ]
+  // Opcional: armazenamento durável dos leads e deduplicação entre regiões.
+  // Crie com `npx wrangler kv namespace create LEADS` e descomente:
+  // ,"kv_namespaces": [{ "binding": "LEADS", "id": "<ID_DO_NAMESPACE>" }]
+}

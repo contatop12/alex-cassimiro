@@ -1,0 +1,172 @@
+{
+  "heroPortrait": {
+    "width": 754,
+    "height": 942,
+    "widths": [
+      400,
+      600,
+      754
+    ],
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoACKQx0FFGwUSAA/hUhwNKN1Qb95uCJA/MbiesJ/vDyH7s1+5CPXCaw3WPrl6w6jOAdARXEfLWIzgooZScOE2AA"
+  },
+  "aboutPortrait": {
+    "width": 942,
+    "height": 1177,
+    "widths": [
+      400,
+      640,
+      942
+    ],
+    "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACQBACdASoQABQAPu1kq04ppaQiMAgBMB2JbACdMoRwFf/gPI9FE6cxjSKY34AA/m5XDQJ3xGSF5kA57REVyfbJP/uCEwiChmytU9uVVeGSiI43dvDdL/VFnzLr/25nM58oAAAA"
+  },
+  "invitePortrait": {
+    "width": 754,
+    "height": 942,
+    "widths": [
+      400,
+      600,
+      754
+    ],
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JbACdMoMYADCMk/y5PnpQAdgA/p6M4iCvZ0l0ap4ddjLrHmY914XBZVqm/YphruSwNYxTU20xumHA82AR9dxC7d207cx5eTYAAA=="
+  },
+  "statePressure": {
+    "width": 941,
+    "height": 942,
+    "widths": [
+      320,
+      480,
+      720
+    ],
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQABAAA4BaJbACdADP0DAT9IAA/rm9IjR4FHvRsTxGFu8plkXtpwpZRbjZ+4Ymwdmv+L45P2gB1MnyzKuAAA=="
+  },
+  "stateDoubt": {
+    "width": 943,
+    "height": 942,
+    "widths": [
+      320,
+      480,
+      720
+    ],
+    "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQABAAA4BaJbACdAEOUdJA1xSAAP6dQT0k1JmH8fi3a8czfTz/EXT0V+mv/jmu39KyLPdTm3yPQAAA"
+  },
+  "stateExplain": {
+    "width": 941,
+    "height": 942,
+    "widths": [
+      320,
+      480,
+      720
+    ],
+    "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQABAAA4BaJbACdADDpt+i0IAA/svsPCQ+d5JNicu681jj8HvvERDGYT5JlX+L45PvKBHeh5fWwkAA"
+  },
+  "stateOpen": {
+    "width": 942,
+    "height": 942,
+    "widths": [
+      320,
+      480,
+      720
+    ],
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQABAAA4BaJbACdAC4P1VLbfAA/rnIbQ/2xlN+X098ugItQF/vhcvVxVVyIYkUQP/3fr1n5yCM91tgy+5QAA=="
+  },
+  "podium": {
+    "width": 800,
+    "height": 800,
+    "widths": [
+      400,
+      800
+    ],
+    "lqip": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAwAgCdASoQABAAA4BaJZQCw7EQ/G1jiUmTgAD+954VWl+g2lmSwyeYiMcGYHJ8mHFeWPlY2EgAAA=="
+  },
+  "talkEnglish": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      640,
+      960,
+      1280,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoQAAsAA4BaJQBOgBPxtHAA/jJsRNcJ488YK2HinEW/dCC2+GZOb4rK4Uxj2gAA"
+  },
+  "talkEnergy": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQAAsAA4BaJZQCdACyn05g+CgAAP4j5lJG0je7iu+a4Sx7z6nRvjTFXpuIAAAA"
+  },
+  "talkQuestion": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAsAA4BaJYwCdACp5+twAAD8oelOgi1u5OREkGRnucHB95ugCjxMQ5OnAAAA"
+  },
+  "talkListening": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQAAsAA4BaJYwCdACySuPnAACoLB9d0+wV3ae5f1RcvZCOpoPGYQTQAAA="
+  },
+  "talkRoom": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      640,
+      960,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQAAsAA4BaJZQCdADQ+qzvMiAA/bfYGgARnpQ10Nhe+RravntJngeaVcAAAA=="
+  },
+  "talkWalk": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      640,
+      960,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAsAA4BaJYwCdACNkMjAAP6iSO/fEwrUeqY4sz0bvl/j1MzYTGo5DL+AMNZTmaHPngAA"
+  },
+  "talkMic": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAsAA4BaJYwCdADdGZ/H6YAA/OAM5rUOITAUriw6u36PriG+lb5TUNdD5ESqqkZGdeAA"
+  },
+  "valinhosGroup": {
+    "width": 1600,
+    "height": 1066,
+    "widths": [
+      640,
+      960,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoQAAsAA4BaJQBOgBMcS3AA8l0sirs0KWOQ/J2VV/eWKU9prYZFYTCuIn4AAA=="
+  },
+  "valinhosPortrait": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      400,
+      640,
+      1000
+    ],
+    "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQABAAA4BaJYwCdADdKesHzLcAAP75F8Dmc966hk6r1VV5qLaaI6h7e69f7wjdhDEMEIGGCD6AAA=="
+  }
+}
