@@ -39,6 +39,13 @@ export const en: Dict = {
     floatingLabel: 'Chat with Alex on WhatsApp',
   },
   talkLanguagesLine: 'Talks in English and Portuguese',
+  video: {
+    label: 'Video of Alex Cassimiro speaking about emotional intelligence, with Portuguese captions',
+    soundOn: 'Turn sound on',
+    soundOff: 'Turn sound off',
+    pause: 'Pause video',
+    play: 'Play video',
+  },
   stats: {
     years: '17+ years',
     yearsLabel: 'of experience in people and leadership development',

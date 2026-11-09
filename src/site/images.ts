@@ -10,6 +10,8 @@ export interface ImageSpec {
   /** Recorte em frações do original: [left, top, width, height] */
   crop?: [number, number, number, number];
   widths: number[];
+  /** Troca o fundo vermelho de estúdio pelo azul-marinho da logo */
+  recolor?: boolean;
 }
 
 export const imageSpecs = {
@@ -18,18 +20,48 @@ export const imageSpecs = {
     source: 'retratos/retrato-sorridente.png',
     crop: [0.2742, 0, 0.4515, 1],
     widths: [400, 600, 754],
+    recolor: true,
   },
-  aboutPortrait: { source: 'retratos/confiante-fundo.png', crop: [0, 0, 1, 0.705], widths: [400, 640, 942] },
-  invitePortrait: { source: 'retratos/convite.png', crop: [0.245, 0, 0.4515, 1], widths: [400, 600, 754] },
-  statePressure: { source: 'retratos/preocupado.png', crop: [0.218, 0, 0.564, 1], widths: [320, 480, 720] },
-  stateDoubt: { source: 'retratos/duvida.png', crop: [0, 0.03, 1, 0.565], widths: [320, 480, 720] },
-  stateExplain: { source: 'retratos/gesticulando.png', crop: [0.19, 0, 0.564, 1], widths: [320, 480, 720] },
+  aboutPortrait: {
+    source: 'retratos/confiante-fundo.png',
+    crop: [0, 0, 1, 0.705],
+    widths: [400, 640, 942],
+    recolor: true,
+  },
+  invitePortrait: {
+    source: 'retratos/convite.png',
+    crop: [0.245, 0, 0.4515, 1],
+    widths: [400, 600, 754],
+    recolor: true,
+  },
+  statePressure: {
+    source: 'retratos/preocupado.png',
+    crop: [0.218, 0, 0.564, 1],
+    widths: [320, 480, 720],
+    recolor: true,
+  },
+  stateDoubt: {
+    source: 'retratos/duvida.png',
+    crop: [0, 0.03, 1, 0.565],
+    widths: [320, 480, 720],
+    recolor: true,
+  },
+  stateExplain: {
+    source: 'retratos/gesticulando.png',
+    crop: [0.19, 0, 0.564, 1],
+    widths: [320, 480, 720],
+    recolor: true,
+  },
   stateOpen: {
     source: 'retratos/acolhedor-bracos-abertos.png',
     crop: [0.218, 0, 0.564, 1],
     widths: [320, 480, 720],
+    recolor: true,
   },
   podium: { source: 'retratos/alex-perfil.png', widths: [400, 600, 800] },
+
+  // Pôster do vídeo do hero (1º quadro, recorte 4:5) — gerado por npm run media
+  heroPoster: { source: 'videos/hero-poster.png', widths: [400, 600, 900, 1200] },
 
   // Palestra em inglês · São Paulo, SP
   talkEnglish: { source: 'palestras/kuraray-4.jpeg', widths: [640, 960, 1280, 1600] },

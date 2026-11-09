@@ -38,6 +38,13 @@ export const pt: Dict = {
     floatingLabel: 'Conversar com Alex no WhatsApp',
   },
   talkLanguagesLine: 'Palestras em português e inglês',
+  video: {
+    label: 'Vídeo de Alex Cassimiro falando sobre inteligência emocional, com legendas em português',
+    soundOn: 'Ativar som',
+    soundOff: 'Desativar som',
+    pause: 'Pausar vídeo',
+    play: 'Reproduzir vídeo',
+  },
   stats: {
     years: '+17 anos',
     yearsLabel: 'de experiência em desenvolvimento de pessoas e lideranças',

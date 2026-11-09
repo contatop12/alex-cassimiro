@@ -46,8 +46,8 @@ const h = (
   props: { style: { display: 'flex', ...style }, children, ...extra },
 });
 
-const NAVY = '#0e2240';
-const SKY = '#9fbfe8';
+const NAVY = '#0a2850';
+const PAPER = '#eff0ec';
 
 let portraitCache: string | null = null;
 async function portrait(publicDir: string): Promise<string> {
@@ -66,7 +66,8 @@ export async function ogImage(opts: {
 }): Promise<Buffer> {
   const img = await portrait(opts.publicDir);
   const titleSize = opts.title.length > 70 ? 50 : opts.title.length > 48 ? 58 : 66;
-  const tree = h('div', { width: 1200, height: 630, background: NAVY, fontFamily: 'Grotesk' }, [
+  const logo = `data:image/svg+xml;base64,${readFileSync(`${opts.publicDir}/img/logo-light.svg`).toString('base64')}`;
+  const tree = h('div', { width: 1200, height: 630, background: PAPER, fontFamily: 'Grotesk' }, [
     h(
       'div',
       {
@@ -74,30 +75,21 @@ export async function ogImage(opts: {
         justifyContent: 'space-between',
         width: 760,
         height: 630,
-        padding: '56px 64px',
+        padding: '52px 64px',
       },
       [
-        h('div', { fontFamily: 'Bodoni', fontSize: 40, color: '#ffffff', letterSpacing: -0.5 }, [
-          h('span', {}, 'Alex '),
-          h('span', { color: SKY }, 'Cassimiro'),
-        ]),
+        { type: 'img', props: { src: logo, width: 214, height: 60, style: { width: 214, height: 60 } } },
         h('div', { flexDirection: 'column' }, [
-          h('div', { width: 64, height: 4, background: '#4b82d0', marginBottom: 28 }),
+          h('div', { width: 64, height: 4, background: '#2c62ae', marginBottom: 28 }),
           h(
             'div',
-            {
-              fontFamily: 'Bodoni',
-              fontSize: titleSize,
-              lineHeight: 1.08,
-              color: '#ffffff',
-              letterSpacing: -0.8,
-            },
+            { fontFamily: 'Bodoni', fontSize: titleSize, lineHeight: 1.08, color: NAVY, letterSpacing: -0.8 },
             opts.title,
           ),
         ]),
-        h('div', { flexDirection: 'column', fontSize: 24, color: SKY }, [
+        h('div', { flexDirection: 'column', fontSize: 24, color: '#2e4f7a' }, [
           h('div', { fontWeight: 700 }, opts.tagline),
-          h('div', { color: 'rgba(255,255,255,0.7)', marginTop: 6, fontSize: 22 }, opts.domain),
+          h('div', { color: '#55657d', marginTop: 6, fontSize: 22 }, opts.domain),
         ]),
       ],
     ),
@@ -120,28 +112,6 @@ export async function ogImage(opts: {
   });
   const png = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
   return sharp(png).jpeg({ quality: 84, mozjpeg: true }).toBuffer();
-}
-
-/** Monograma "AC" em SVG vetorial (texto convertido em curvas). */
-export async function monogramSvg(size = 512): Promise<string> {
-  const tree = h(
-    'div',
-    {
-      width: size,
-      height: size,
-      background: NAVY,
-      borderRadius: size * 0.18,
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: 'Bodoni',
-      fontSize: size * 0.5,
-      color: '#ffffff',
-      letterSpacing: -size * 0.01,
-      paddingBottom: size * 0.04,
-    },
-    [h('span', {}, 'A'), h('span', { color: SKY }, 'C')],
-  );
-  return satori(tree as unknown as Parameters<typeof satori>[0], { width: size, height: size, fonts });
 }
 
 export function svgToPng(svg: string, width: number): Buffer {

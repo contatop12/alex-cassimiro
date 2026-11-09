@@ -92,6 +92,12 @@ function faqSection(_ctx: Ctx, id: string, title: string, items: ctx_faq) {
 }
 type ctx_faq = Ctx['t']['pages']['home']['faq'];
 
+/** Vídeo do hero: pôster como imagem principal (LCP) e vídeo sem som por cima, iniciado após o carregamento. */
+function heroVideo(ctx: Ctx): string {
+  const v = ctx.t.video;
+  return `<div class="hero-media hero-media--video" data-curtain><div class="video-frame">${picture(ctx, 'heroPoster', { sizes: HERO_SIZES, eager: true, alt: v.label })}<video class="hero-video" muted loop playsinline preload="none" disablepictureinpicture aria-label="${e(v.label)}" data-hero-video><source src="/video/hero.webm" type="video/webm"><source src="/video/hero.mp4" type="video/mp4"></video></div><div class="video-ctrl"><button type="button" class="vbtn" data-video-toggle data-play="${e(v.play)}" data-pause="${e(v.pause)}" aria-label="${e(v.play)}">${icons.play()}${icons.pause()}</button><button type="button" class="vbtn" data-video-sound data-on="${e(v.soundOn)}" data-off="${e(v.soundOff)}" aria-pressed="false">${icons.soundOff()}${icons.soundOn()}<span>${e(v.soundOn)}</span></button></div></div>`;
+}
+
 /* ───────────────────────────── Home ───────────────────────────── */
 
 export function home(ctx: Ctx): PageOutput {
@@ -102,7 +108,7 @@ export function home(ctx: Ctx): PageOutput {
   const spCase = t.cases.english;
   const vCase = t.cases.voilier;
 
-  const hero = `<section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid"><div class="hero-copy"><p class="hero-id" data-rise>${e(t.identity)}</p><h1 id="hero-title" class="display" data-split>${splitWords(h.h1)}</h1><p class="lede lede--lg" data-rise>${e(h.support)}</p><div class="btn-row" data-rise>${btnProposal(ctx, 'hero')}<a class="btn btn-ghost" href="${path('talks', ctx.lang)}" data-cta="hero-secondary"><span>${e(t.cta.topics)}</span></a></div><p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(t.talkLanguagesLine)}</span></p></div><div class="hero-media" data-curtain>${picture(ctx, 'heroPortrait', { sizes: HERO_SIZES, eager: true, alt: h.portraitAlt })}<span class="hero-tag" aria-hidden="true">PT · EN</span></div></div></section>`;
+  const hero = `<section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid"><div class="hero-copy"><p class="hero-id" data-rise>${e(t.identity)}</p><h1 id="hero-title" class="display" data-split>${splitWords(h.h1)}</h1><p class="lede lede--lg" data-rise>${e(h.support)}</p><div class="btn-row" data-rise>${btnProposal(ctx, 'hero')}<a class="btn btn-ghost" href="${path('talks', ctx.lang)}" data-cta="hero-secondary"><span>${e(t.cta.topics)}</span></a></div><p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(t.talkLanguagesLine)}</span></p></div>${heroVideo(ctx)}</div></section>`;
 
   const proof = `<section class="proof" aria-labelledby="proof-title"><div class="aperture" data-aperture>${figure(ctx, 'talkWalk', { sizes: '100vw', className: 'aperture-fig', reveal: false })}</div><div class="wrap proof-grid"><div class="proof-card" data-reveal><h2 id="proof-title" class="h2">${e(h.english.title)}</h2><p>${e(english)}</p>${textLink(path('english', ctx.lang), h.english.link)}</div>${statsBlock(ctx, facts.referenceYear)}</div></section>`;
 
@@ -143,13 +149,20 @@ export function home(ctx: Ctx): PageOutput {
     description: t.meta.home.description,
     body,
     bodyClass: 'is-home',
-    preloadImage: preloadFor('heroPortrait', HERO_SIZES),
+    preloadImage: preloadFor('heroPoster', HERO_SIZES),
     jsonLd: jsonLd(ctx, {
       page: 'home',
       title: t.meta.home.title,
       description: t.meta.home.description,
       faq: h.faq,
       image: abs('/img/heroPortrait-754.webp'),
+      video: {
+        name: h.h1,
+        description: t.video.label,
+        contentUrl: abs('/video/hero.mp4'),
+        thumbnailUrl: abs('/img/heroPoster-1200.webp'),
+        duration: 'PT2M10S',
+      },
     }),
   };
 }

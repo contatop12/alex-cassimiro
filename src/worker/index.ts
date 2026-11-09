@@ -3,8 +3,10 @@
  * primeiro apenas para:
  *   - POST /api/lead  → pedido de proposta (validação, antiabuso, entrega)
  *   - /robots.txt     → bloqueia indexação fora do domínio canônico (prévias)
+ *   - /video/*        → suporte a Range (206) para o vídeo do hero (exigido pelo Safari)
  */
 import { handleLead } from './lead.ts';
+import { serveVideo } from './range.ts';
 
 export interface AppEnv extends Env {
   /* Segredos opcionais (wrangler secret put …) */
@@ -43,6 +45,7 @@ export default {
     const url = new URL(request.url);
     if (url.pathname === '/robots.txt') return robots(request, url, env);
     if (url.pathname === '/api/lead') return handleLead(request, env, ctx);
+    if (url.pathname.startsWith('/video/')) return serveVideo(request, env.ASSETS);
     if (url.pathname.startsWith('/api/')) {
       return Response.json({ ok: false, error: 'not_found' }, { status: 404 });
     }

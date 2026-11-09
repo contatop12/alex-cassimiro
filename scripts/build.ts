@@ -26,7 +26,7 @@ import {
 } from '../src/site/routes.ts';
 import { type Assets, layout } from '../src/templates/layout.ts';
 import { notFound, renderers } from '../src/templates/pages.ts';
-import { monogramSvg, ogImage, pngToIco, svgToPng } from './og.ts';
+import { ogImage, pngToIco, svgToPng } from './og.ts';
 
 const root = resolve(import.meta.dirname, '..');
 const dist = join(root, 'dist');
@@ -162,7 +162,7 @@ await Promise.all(
       const t = dicts[lang];
       const buf = await ogImage({
         title: ogTitle(t, page),
-        tagline: `${t.identity.split('·')[1]?.trim()} · ${t.talkLanguagesLine}`,
+        tagline: t.talkLanguagesLine,
         domain,
         publicDir,
       });
@@ -170,7 +170,7 @@ await Promise.all(
     }),
   ),
 );
-const mono = await monogramSvg(512);
+const mono = readFileSync(join(publicDir, 'img', 'monogram.svg'), 'utf8');
 write(join(dist, 'favicon.svg'), mono);
 write(join(dist, 'apple-touch-icon.png'), svgToPng(mono, 180));
 write(join(dist, 'icon-192.png'), svgToPng(mono, 192));
@@ -185,7 +185,7 @@ write(
       start_url: '/',
       display: 'minimal-ui',
       background_color: '#f2f5f9',
-      theme_color: '#0e2240',
+      theme_color: '#0a2850',
       lang: 'pt-BR',
       icons: [
         { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },

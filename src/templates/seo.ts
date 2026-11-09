@@ -61,6 +61,7 @@ export interface LdOpts {
   service?: { name: string; description: string; languages?: string[] };
   type?: 'WebPage' | 'AboutPage' | 'ContactPage' | 'ProfilePage' | 'CollectionPage';
   image?: string;
+  video?: { name: string; description: string; contentUrl: string; thumbnailUrl: string; duration: string };
 }
 
 export function jsonLd(ctx: Ctx, o: LdOpts): string {
@@ -112,6 +113,16 @@ export function jsonLd(ctx: Ctx, o: LdOpts): string {
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
+    });
+  }
+  if (o.video) {
+    graph.push({
+      '@type': 'VideoObject',
+      '@id': `${url}#video`,
+      ...o.video,
+      uploadDate: site.updated,
+      inLanguage: 'pt-BR',
+      publisher: { '@id': personId },
     });
   }
   if (o.service) {

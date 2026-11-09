@@ -218,6 +218,65 @@ describe('robots.txt', () => {
   });
 });
 
+describe('vídeo com Range', () => {
+  const bytes = new Uint8Array(1000).map((_, i) => i % 256);
+  const assetEnv = () =>
+    makeEnv({
+      ASSETS: {
+        fetch: vi.fn(
+          async () =>
+            new Response(bytes, {
+              status: 200,
+              headers: { 'content-type': 'video/mp4', 'content-length': '1000' },
+            }),
+        ),
+      },
+    });
+  it('responde 206 com o trecho pedido', async () => {
+    const r = await run(
+      new Request('https://alexcassimiro.com.br/video/hero.mp4', { headers: { range: 'bytes=100-199' } }),
+      assetEnv(),
+    );
+    expect(r.status).toBe(206);
+    expect(r.headers.get('content-range')).toBe('bytes 100-199/1000');
+    const body = new Uint8Array(await r.arrayBuffer());
+    expect(body.length).toBe(100);
+    expect(body[0]).toBe(100);
+  });
+  it('aceita sufixo e intervalo aberto; recusa intervalo inválido', async () => {
+    const tail = await run(
+      new Request('https://alexcassimiro.com.br/video/hero.mp4', { headers: { range: 'bytes=-10' } }),
+      assetEnv(),
+    );
+    expect(tail.headers.get('content-range')).toBe('bytes 990-999/1000');
+    const open = await run(
+      new Request('https://alexcassimiro.com.br/video/hero.mp4', { headers: { range: 'bytes=900-' } }),
+      assetEnv(),
+    );
+    expect((await open.arrayBuffer()).byteLength).toBe(100);
+    const bad = await run(
+      new Request('https://alexcassimiro.com.br/video/hero.mp4', { headers: { range: 'bytes=5000-' } }),
+      assetEnv(),
+    );
+    expect(bad.status).toBe(416);
+  });
+  it('recorta também quando o tamanho não vem no cabeçalho', async () => {
+    const env = makeEnv({ ASSETS: { fetch: vi.fn(async () => new Response(bytes, { status: 200 })) } });
+    const r = await run(
+      new Request('https://alexcassimiro.com.br/video/hero.mp4', { headers: { range: 'bytes=10-19' } }),
+      env,
+    );
+    expect(r.status).toBe(206);
+    expect(r.headers.get('content-range')).toBe('bytes 10-19/1000');
+    expect((await r.arrayBuffer()).byteLength).toBe(10);
+  });
+  it('sem Range devolve o arquivo inteiro anunciando suporte a Range', async () => {
+    const r = await run(new Request('https://alexcassimiro.com.br/video/hero.mp4'), assetEnv());
+    expect(r.status).toBe(200);
+    expect(r.headers.get('accept-ranges')).toBe('bytes');
+  });
+});
+
 describe('e-mail do lead', () => {
   it('escapa HTML vindo do formulário', () => {
     const { html } = buildEmail(

@@ -108,6 +108,7 @@ export interface Dict {
     floatingLabel: string;
   };
   talkLanguagesLine: string;
+  video: { label: string; soundOn: string; soundOff: string; pause: string; play: string };
   stats: {
     years: string;
     yearsLabel: string;

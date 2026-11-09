@@ -83,6 +83,26 @@ describe.skipIf(!built)('HTML gerado', () => {
     }
   });
 
+  it('home tem o vídeo no hero (sem selo PT · EN) e a logo oficial', () => {
+    for (const lang of langs) {
+      const html = read(routes.home[lang]);
+      expect(html).toContain('data-hero-video');
+      expect(html).toContain('<source src="/video/hero.mp4" type="video/mp4">');
+      expect(html).not.toContain('hero-tag');
+      expect(html).toContain('src="/img/logo-light.svg"');
+      expect(html).toContain('"@type":"VideoObject"');
+    }
+    for (const f of [
+      'video/hero.mp4',
+      'video/hero.webm',
+      'img/logo-light.svg',
+      'img/logo-dark.svg',
+      'favicon.svg',
+    ]) {
+      expect(existsSync(join(dist, f))).toBe(true);
+    }
+  });
+
   it('rodapé traz o crédito da P12 Digital em cada idioma', () => {
     expect(read('/')).toContain('Desenvolvido por <a href="https://p12digital.com.br/"');
     expect(read('/en/')).toContain('Developed by <a href="https://p12digital.com.br/"');

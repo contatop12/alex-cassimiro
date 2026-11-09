@@ -30,6 +30,15 @@ export const icons = {
       '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/>',
       size,
     ),
+  play: (size = 18) => svg('<path d="M7 5.5v13l11-6.5z" fill="currentColor"/>', size),
+  pause: (size = 18) => svg('<path d="M8 5v14"/><path d="M16 5v14"/>', size),
+  soundOff: (size = 18) =>
+    svg('<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="m16 9.5 5 5"/><path d="m21 9.5-5 5"/>', size),
+  soundOn: (size = 18) =>
+    svg(
+      '<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/>',
+      size,
+    ),
   external: (size = 16) =>
     svg(
       '<path d="M14 4h6v6"/><path d="M10 14 20 4"/><path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6"/>',

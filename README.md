@@ -23,7 +23,8 @@ npm run typecheck      # checagem de tipos
 npm run lint           # Biome (lint + formatação)
 npm test               # Vitest (requer build antes para os testes de HTML)
 npm run check          # tudo acima, na ordem
-npm run media          # re-otimiza imagens/vídeos a partir de materiais/originais (fora do Git)
+npm run media          # logo, vídeo do hero e imagens (troca de fundo dos retratos) a partir de materiais/originais (fora do Git)
+npm run media -- --skip-video   # idem, sem recodificar o vídeo (etapa mais lenta)
 # Com `npm run dev` aberto, o Wrangler já reconstrói ao salvar: não rode `npm run build` em paralelo.
 npm run deploy         # build + wrangler deploy (use só no lançamento)
 ```
@@ -139,7 +140,7 @@ CI do GitHub (`.github/workflows/ci.yml`) roda typecheck, lint, build e testes e
 ## Pendências específicas
 
 - [ ] **Domínio**: comprar/validar `alexcassimiro.com.br` (proposto) e decidir sobre `oalexcassimiro.com.br` (redirecionar 301 para o canônico via Redirect Rules). Se o domínio final mudar, ajuste `SITE_URL` (build e `wrangler.jsonc`).
-- [ ] **Logo oficial e manual**: não recebidos (link Adobe exige login). Substituir o wordmark tipográfico e o monograma "AC" e regenerar favicon/OG.
+- [x] **Logo oficial**: aplicada (SVGs em `public/img/logo-*.svg`, favicon a partir do monograma). Manual de marca ainda não recebido.
 - [ ] **Autorização Kuraray** (nome e logo) e confirmação do segmento antes de usar "farmacêutica" → `publish.kurarayName = true` em `src/site/config.ts`.
 - [ ] **Autorização Voilier** (nome) e dados verificados (idioma, data, público) → `publish.voilierName = true`.
 - [ ] **Depoimentos**: destaque do Instagram exige login; enviar arquivos com nome, cargo, empresa e autorização.

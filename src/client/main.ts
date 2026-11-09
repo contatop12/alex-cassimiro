@@ -6,6 +6,7 @@
 
 import { initAnalytics } from './analytics.ts';
 import { initForm } from './form.ts';
+import { initHeroVideo } from './video.ts';
 
 declare global {
   interface Window {
@@ -249,6 +250,7 @@ function boot() {
   initCtaMemory();
   initAnalytics();
   initForm();
+  initHeroVideo();
   doc.classList.add('is-ready');
 }
 
