@@ -2103,6 +2103,20 @@ details[open]::details-content {
 .foot-legal a {
   color: rgb(255 255 255 / 0.78);
 }
+.foot-credit {
+  margin-left: auto;
+}
+.foot-credit a {
+  color: var(--white);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .foot-credit {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 
 /* ---------- WhatsApp flutuante e barra fixa (mobile) ---------- */
 .wa-float {

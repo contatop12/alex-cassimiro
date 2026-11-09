@@ -71,6 +71,12 @@ describe.skipIf(!built)('HTML gerado', () => {
     expect([...missing]).toEqual([]);
   });
 
+  it('rodapé traz o crédito da P12 Digital em cada idioma', () => {
+    expect(read('/')).toContain('Desenvolvido por <a href="https://p12digital.com.br/"');
+    expect(read('/en/')).toContain('Developed by <a href="https://p12digital.com.br/"');
+    expect(read('/es/')).toContain('Desarrollado por <a href="https://p12digital.com.br/"');
+  });
+
   it('espanhol informa que as palestras são em português e inglês', () => {
     const html = read('/es/');
     expect(html).toContain('Conferencias disponibles en portugués e inglés');

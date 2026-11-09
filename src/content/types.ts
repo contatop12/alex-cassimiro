@@ -135,6 +135,8 @@ export interface Dict {
     rights: string;
     instagramLabel: string;
     linkedinLabel: string;
+    /** Crédito da agência: texto antes do nome "P12 Digital" */
+    creditPrefix: string;
   };
   consent: { text: string; accept: string; reject: string; policy: string };
   form: {

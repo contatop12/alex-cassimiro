@@ -278,6 +278,7 @@ export const en: Dict = {
     rights: 'All rights reserved.',
     instagramLabel: 'Alex Cassimiro on Instagram',
     linkedinLabel: 'Alex Cassimiro on LinkedIn',
+    creditPrefix: 'Developed by',
   },
   consent: {
     text: 'We use measurement cookies to understand which pages help companies find these talks. No form data is sent to these tools.',

@@ -280,6 +280,7 @@ export const pt: Dict = {
     rights: 'Todos os direitos reservados.',
     instagramLabel: 'Instagram de Alex Cassimiro',
     linkedinLabel: 'LinkedIn de Alex Cassimiro',
+    creditPrefix: 'Desenvolvido por',
   },
   consent: {
     text: 'Usamos cookies de medição para entender quais páginas ajudam empresas a encontrar as palestras. Nenhum dado do formulário é enviado para essas ferramentas.',

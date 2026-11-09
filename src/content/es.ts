@@ -284,6 +284,7 @@ export const es: Dict = {
     rights: 'Todos los derechos reservados.',
     instagramLabel: 'Instagram de Alex Cassimiro',
     linkedinLabel: 'LinkedIn de Alex Cassimiro',
+    creditPrefix: 'Desarrollado por',
   },
   consent: {
     text: 'Usamos cookies de medición para entender qué páginas ayudan a las empresas a encontrar las conferencias. Ningún dato del formulario se envía a estas herramientas.',
