@@ -3,6 +3,12 @@
   "name": "alex-cassimiro",
   "main": "src/worker/index.ts",
   "compatibility_date": "2026-11-09",
+  // O Wrangler gera dist/ antes de `wrangler deploy` e `wrangler dev`
+  // (funciona mesmo se o Workers Builds estiver sem "Build command").
+  "build": {
+    "command": "npm run build",
+    "watch_dir": ["src", "scripts", "public"]
+  },
   // Site estático gerado em ./dist por `npm run build`.
   // O Worker só roda primeiro para a API do formulário e para o robots.txt (que muda na prévia).
   "assets": {

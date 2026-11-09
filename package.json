@@ -10,9 +10,9 @@
   "scripts": {
     "media": "tsx scripts/media.ts",
     "build": "tsx scripts/build.ts",
-    "dev": "npm run build && wrangler dev",
-    "preview": "npm run build && wrangler dev --port 8790",
-    "deploy": "npm run build && wrangler deploy",
+    "dev": "wrangler dev",
+    "preview": "wrangler dev --port 8790",
+    "deploy": "wrangler deploy",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",

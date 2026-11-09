@@ -129,7 +129,7 @@ Defina `PUBLIC_GTM_ID` no ambiente de build. Com ele, o site mostra o aviso de c
 ## Deploy (GitHub → Cloudflare Workers Builds)
 
 1. Cloudflare Dashboard → Workers & Pages → **Create** → **Import a repository** → selecione `contatop12/alex-cassimiro`.
-2. Build command: `npm run build` · Deploy command: `npx wrangler deploy` · Branch de produção: `main`. Variáveis de build (opcionais): `SITE_URL`, `PUBLIC_GTM_ID`, `PUBLIC_TURNSTILE_SITE_KEY`.
+2. Deploy command: `npx wrangler deploy` · Build command: pode ficar vazio (o `wrangler.jsonc` define `build.command = npm run build`, executado automaticamente antes do deploy) · Branch de produção: `main`. Variáveis de build (opcionais): `SITE_URL`, `PUBLIC_GTM_ID`, `PUBLIC_TURNSTILE_SITE_KEY`.
 3. Configure os segredos do formulário (seção acima).
 4. Cada push em `main` publica; branches geram versões de prévia (`*.workers.dev`, não indexáveis).
 
