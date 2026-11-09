@@ -733,12 +733,6 @@ body.menu-open {
 .phero--contact {
   padding-bottom: 1.5rem;
 }
-.phero-cap {
-  position: relative;
-  margin-top: 2.2rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
 .crumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -903,20 +897,6 @@ body.menu-open {
   object-fit: cover;
   transform: scale(calc(1.12 - var(--p) * 0.12));
   transform-origin: 50% 40%;
-}
-.aperture-fig figcaption {
-  position: absolute;
-  left: var(--gutter);
-  bottom: calc(clamp(5rem, 4rem + 4vw, 8rem));
-  max-width: min(520px, 80vw);
-  color: var(--white);
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.5rem 0.8rem;
-  background: rgb(7 23 49 / 0.72);
-  border-radius: 3px;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 .proof-grid {
   position: relative;
@@ -1217,11 +1197,6 @@ details[open]::details-content {
   display: grid;
   gap: 0.55rem;
   align-content: start;
-}
-.fig figcaption {
-  font-size: 0.84rem;
-  color: var(--muted);
-  line-height: 1.4;
 }
 .mosaic .m-a {
   grid-template-rows: 1fr auto;
@@ -2499,10 +2474,6 @@ details[open]::details-content {
   }
   .aperture-fig .pic img {
     height: 62vh;
-  }
-  .aperture-fig figcaption {
-    bottom: 3.5rem;
-    right: var(--gutter);
   }
   .compare thead {
     display: none;

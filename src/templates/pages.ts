@@ -9,7 +9,6 @@ import {
   faqList,
   figure,
   finalCta,
-  imageText,
   itemGrid,
   picture,
   sectionHead,
@@ -78,7 +77,7 @@ function pageHero(
   opts: { image?: ImageKey; actions?: string; langs?: boolean } = {},
 ): string {
   const media = opts.image
-    ? `<div class="phero-media" data-curtain>${picture(ctx, opts.image, { sizes: PHERO_SIZES, eager: true })}${imageText(ctx, opts.image).caption ? `<p class="phero-cap">${e(imageText(ctx, opts.image).caption!)}</p>` : ''}</div>`
+    ? `<div class="phero-media" data-curtain>${picture(ctx, opts.image, { sizes: PHERO_SIZES, eager: true })}</div>`
     : '';
   return `<section class="phero${opts.image ? '' : ' phero--plain'}" aria-labelledby="ph-title"><div class="wrap phero-grid"><div class="phero-copy">${breadcrumb(ctx, trail(ctx, page))}<h1 id="ph-title" class="display display--page" data-split>${splitWords(h1)}</h1><p class="lede lede--lg" data-rise>${e(intro)}</p>${opts.actions ? `<div class="btn-row" data-rise>${opts.actions}</div>` : ''}${opts.langs === false ? '' : `<p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(ctx.t.talkLanguagesLine)}</span></p>`}</div>${media}</div></section>`;
 }

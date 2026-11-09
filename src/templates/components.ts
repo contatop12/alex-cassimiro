@@ -48,10 +48,9 @@ export function picture(ctx: Ctx, key: ImageKey, opts: PictureOpts): string {
   return `<picture class="${e(join(['pic', opts.className], ' '))}"><source type="image/avif" srcset="${srcset(key, 'avif')}" sizes="${e(opts.sizes)}"><source type="image/webp" srcset="${srcset(key, 'webp')}" sizes="${e(opts.sizes)}"><img src="${fallback}" width="${img.width}" height="${img.height}" alt="${e(alt)}" ${opts.eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'} decoding="async" style="background-image:url(${img.lqip})"></picture>`;
 }
 
-/** Figura com legenda factual. */
+/** Foto sem legenda visível: o contexto fica no texto alternativo (alt), lido por leitores de tela e buscadores. */
 export function figure(ctx: Ctx, key: ImageKey, opts: PictureOpts & { reveal?: boolean }): string {
-  const { caption } = imageText(ctx, key);
-  return `<figure class="${e(join(['fig', opts.className], ' '))}"${opts.reveal === false ? '' : ' data-reveal'}>${picture(ctx, key, { ...opts, className: undefined })}${caption ? `<figcaption>${e(caption)}</figcaption>` : ''}</figure>`;
+  return `<figure class="${e(join(['fig', opts.className], ' '))}"${opts.reveal === false ? '' : ' data-reveal'}>${picture(ctx, key, { ...opts, className: undefined })}</figure>`;
 }
 
 export function contactHref(ctx: Ctx, params?: { topic?: string; lang?: string }): string {

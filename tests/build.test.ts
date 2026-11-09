@@ -71,6 +71,18 @@ describe.skipIf(!built)('HTML gerado', () => {
     expect([...missing]).toEqual([]);
   });
 
+  it('fotos não exibem legendas soltas (contexto fica no alt)', () => {
+    for (const lang of langs) {
+      for (const page of pageIds) {
+        const html = read(routes[page][lang]);
+        expect(html).not.toContain('phero-cap');
+        // Única exceção: assinatura da citação de Alex (não é legenda de foto)
+        const quotes = html.match(/class="quote-fig"/g)?.length ?? 0;
+        expect(html.match(/<figcaption>/g)?.length ?? 0).toBe(quotes);
+      }
+    }
+  });
+
   it('rodapé traz o crédito da P12 Digital em cada idioma', () => {
     expect(read('/')).toContain('Desenvolvido por <a href="https://p12digital.com.br/"');
     expect(read('/en/')).toContain('Developed by <a href="https://p12digital.com.br/"');
