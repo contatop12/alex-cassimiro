@@ -774,7 +774,6 @@ export const en: Dict = {
       facts: [
         { value: '17+ years', label: 'of experience in people and leadership development' },
         { value: '1,000+', label: 'leaders trained in leadership programs' },
-        { value: 'EN · PT', label: 'talk languages' },
       ],
       approachTitle: 'How Alex works',
       approach: [

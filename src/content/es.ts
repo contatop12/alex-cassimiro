@@ -818,7 +818,6 @@ export const es: Dict = {
       facts: [
         { value: '+17 años', label: 'de experiencia en desarrollo de personas y liderazgo' },
         { value: '+1.000', label: 'líderes capacitados en programas de liderazgo' },
-        { value: 'PT · EN', label: 'idiomas de las conferencias' },
       ],
       approachTitle: 'Cómo trabaja Alex',
       approach: [

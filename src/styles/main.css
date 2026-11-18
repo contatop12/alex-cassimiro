@@ -1639,11 +1639,6 @@ details[open]::details-content {
   line-height: 1.25;
   color: var(--white);
 }
-.quote-fig figcaption {
-  margin-top: 1.25rem;
-  color: var(--sky);
-  font-weight: 600;
-}
 
 /* ---------- Inteligência emocional ---------- */
 .sit-list {

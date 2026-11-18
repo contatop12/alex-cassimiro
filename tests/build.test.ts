@@ -76,9 +76,8 @@ describe.skipIf(!built)('HTML gerado', () => {
       for (const page of pageIds) {
         const html = read(routes[page][lang]);
         expect(html).not.toContain('phero-cap');
-        // Única exceção: assinatura da citação de Alex (não é legenda de foto)
-        const quotes = html.match(/class="quote-fig"/g)?.length ?? 0;
-        expect(html.match(/<figcaption>/g)?.length ?? 0).toBe(quotes);
+        expect(html).not.toContain('<figcaption');
+        expect(html).not.toMatch(/PT · EN|EN · PT/);
       }
     }
   });
