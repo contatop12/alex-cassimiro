@@ -19,7 +19,7 @@ export const es: Dict = {
     language: 'Idioma del sitio',
   },
   cta: {
-    proposal: 'Solicitar una propuesta',
+    proposal: 'Solicitar propuesta',
     topics: 'Ver temas de las conferencias',
     whatsapp: 'Conversar por WhatsApp',
     email: 'Enviar correo',

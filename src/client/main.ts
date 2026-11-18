@@ -67,6 +67,19 @@ function initHeader() {
   update();
 }
 
+/* Se os rótulos do menu não couberem numa linha (idioma, fonte ampliada), usa o menu compacto */
+function initNavFit() {
+  const header = document.querySelector<HTMLElement>('[data-header]');
+  const inner = header?.querySelector<HTMLElement>('.header-in');
+  if (!header || !inner || !('ResizeObserver' in window)) return;
+  const check = () => {
+    header.classList.remove('nav-tight');
+    header.classList.toggle('nav-tight', inner.scrollWidth > inner.clientWidth + 1);
+  };
+  new ResizeObserver(check).observe(inner);
+  document.fonts?.ready.then(check);
+}
+
 /* Menu móvel com foco preso, Esc e retorno do foco */
 function initMenu() {
   const menu = document.querySelector<HTMLElement>('[data-menu]');
@@ -243,6 +256,7 @@ function initCtaMemory() {
 function boot() {
   initReveal();
   initHeader();
+  initNavFit();
   initMenu();
   initCounters();
   initScrollEffects();
