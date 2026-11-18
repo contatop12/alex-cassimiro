@@ -96,7 +96,7 @@ describe.skipIf(!built)('HTML gerado', () => {
       'video/hero.mp4',
       'video/hero.webm',
       'img/logo-light.svg',
-      'img/logo-dark.svg',
+      'img/logo-white.svg',
       'favicon.svg',
     ]) {
       expect(existsSync(join(dist, f))).toBe(true);

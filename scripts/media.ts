@@ -38,10 +38,7 @@ async function processLogo() {
     console.warn('logo: materiais/originais/logo ausente — mantendo os arquivos publicados');
     return;
   }
-  for (const [src, out] of [
-    ['logo-clara.svg', 'logo-light.svg'],
-    ['logo-escura.svg', 'logo-dark.svg'],
-  ] as const) {
+  for (const [src, out] of [['logo-clara.svg', 'logo-light.svg']] as const) {
     // Remove o fundo e usa px (o original declara width/height em pt, o que distorce a medição)
     let svg = readFileSync(join(dir, src), 'utf8')
       .replace(/<rect x="-81"[^>]*\/>/g, '')
@@ -55,6 +52,10 @@ async function processLogo() {
     );
     writeFileSync(join(outImg, out), svg);
     console.log(`logo ${out} viewBox ${vb.join(' ')}`);
+    // Versão branca para fundos escuros (menu e rodapé): mesmo desenho, letras em branco
+    const white = svg.replace(/fill="rgb\([^"]*\)"/g, 'fill="#FFFFFF"');
+    writeFileSync(join(outImg, 'logo-white.svg'), white);
+    console.log('logo logo-white.svg');
   }
   // Monograma claro sobre o azul da logo (favicon e ícones do app)
   const mono = readFileSync(join(dir, 'monograma.svg'), 'utf8');

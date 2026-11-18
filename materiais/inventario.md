@@ -26,7 +26,7 @@ Versões otimizadas em `public/img/` (AVIF + WebP responsivos), geradas por `npm
 
 ## Pendências de ativos
 
-- **Logo**: recebida em 09/11/2026 (SVGs clara, escura e monograma) e aplicada no cabeçalho, menu, rodapé, favicon e imagens de compartilhamento. Manual de marca não recebido.
+- **Logo**: recebida em 09/11/2026 (SVGs clara, escura e monograma) e aplicada no cabeçalho, favicon e imagens de compartilhamento; no menu móvel e no rodapé usa-se a versão em branco (`logo-white.svg`, mesmo desenho), a pedido do cliente. Manual de marca não recebido.
 - **Fundo dos retratos**: o vermelho de estúdio foi trocado pelo azul da logo (#0A2850) a pedido do cliente (`scripts/recolor.ts`, aplicado por `npm run media`).
 - **Depoimentos**: destaque do Instagram exige login e não há autorização registrada → bloco omitido.
 - **Vídeos**: "Palestra Voiler.mp4" no hero da home. Outros vídeos: colocar em `materiais/originais/videos/` e ajustar `scripts/media.ts`.
