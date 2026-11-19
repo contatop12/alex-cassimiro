@@ -220,11 +220,11 @@ export const en: Dict = {
         'An emotional intelligence talk delivered in English to Kuraray employees, in São Paulo, Brazil.',
     },
     voilier: {
-      label: 'Emotional intelligence talk',
+      label: 'Energy Management and Sustainable Performance',
       place: 'Valinhos, SP',
-      text: 'An emotional intelligence talk for the team of a company in Valinhos, in the interior of the state of São Paulo.',
+      text: 'The company asked for a talk on time management. After the diagnosis, the scope was broadened and the session with the team, in Valinhos, in the interior of the state of São Paulo, covered energy management and sustainable performance.',
       textNamed:
-        'An emotional intelligence talk for the Voilier team, in Valinhos, in the interior of the state of São Paulo.',
+        'Voilier asked for a talk on time management. After the diagnosis, the scope was broadened and the session with the team, in Valinhos, in the interior of the state of São Paulo, covered energy management and sustainable performance.',
     },
   },
   images: {
@@ -270,8 +270,8 @@ export const en: Dict = {
     },
     valinhosGroup: {
       alt: 'Group photo of the participants with Alex Cassimiro at the end of a talk',
-      caption: 'Emotional intelligence talk · Valinhos, SP',
-      captionNamed: 'Emotional intelligence talk at Voilier · Valinhos, SP',
+      caption: 'Energy management and sustainable performance talk · Valinhos, SP',
+      captionNamed: 'Energy management and sustainable performance talk at Voilier · Valinhos, SP',
     },
     valinhosPortrait: {
       alt: 'Alex Cassimiro seated and smiling in a room with plants',
@@ -404,8 +404,7 @@ export const en: Dict = {
       },
       cases: {
         title: 'Past engagements',
-        intro:
-          'Records of emotional intelligence talks delivered at companies in the state of São Paulo, Brazil.',
+        intro: 'Records of talks delivered at companies in the state of São Paulo, Brazil.',
       },
       about: {
         title: 'About Alex',
@@ -565,7 +564,7 @@ export const en: Dict = {
       ],
       evidenceTitle: 'Records of the talk',
       evidenceText:
-        'The emotional intelligence talk has been delivered in English in São Paulo and in Portuguese in Valinhos (SP).',
+        'The emotional intelligence talk has been delivered in English to employees of a company with international operations, in São Paulo.',
       faqTitle: 'Questions about the emotional intelligence talk',
       faq: [
         {

@@ -225,11 +225,11 @@ export const es: Dict = {
         'Conferencia sobre inteligencia emocional dictada en inglés para colaboradores de Kuraray, en São Paulo.',
     },
     voilier: {
-      label: 'Conferencia de inteligencia emocional',
+      label: 'Gestión de Energía y Desempeño Sostenible',
       place: 'Valinhos, SP',
-      text: 'Conferencia sobre inteligencia emocional para el equipo de una empresa en Valinhos, en el interior del estado de São Paulo.',
+      text: 'La empresa pidió una conferencia sobre gestión del tiempo. Después del diagnóstico, se amplió el alcance y el encuentro con el equipo, en Valinhos, en el interior del estado de São Paulo, abordó la gestión de la energía y el desempeño sostenible.',
       textNamed:
-        'Conferencia sobre inteligencia emocional para el equipo de Voilier, en Valinhos, en el interior del estado de São Paulo.',
+        'Voilier pidió una conferencia sobre gestión del tiempo. Después del diagnóstico, se amplió el alcance y el encuentro con el equipo, en Valinhos, en el interior del estado de São Paulo, abordó la gestión de la energía y el desempeño sostenible.',
     },
   },
   images: {
@@ -277,8 +277,8 @@ export const es: Dict = {
     },
     valinhosGroup: {
       alt: 'Foto grupal de los participantes con Alex Cassimiro al final de una conferencia',
-      caption: 'Conferencia de inteligencia emocional · Valinhos, SP',
-      captionNamed: 'Conferencia de inteligencia emocional en Voilier · Valinhos, SP',
+      caption: 'Conferencia de gestión de la energía y desempeño sostenible · Valinhos, SP',
+      captionNamed: 'Conferencia de gestión de la energía y desempeño sostenible en Voilier · Valinhos, SP',
     },
     valinhosPortrait: {
       alt: 'Alex Cassimiro sentado y sonriendo, en un ambiente con plantas',
@@ -414,8 +414,7 @@ export const es: Dict = {
       },
       cases: {
         title: 'Experiencias realizadas',
-        intro:
-          'Registros de conferencias de inteligencia emocional dictadas en empresas del estado de São Paulo.',
+        intro: 'Registros de conferencias dictadas en empresas del estado de São Paulo.',
       },
       about: {
         title: 'Acerca de Alex',
@@ -590,7 +589,7 @@ export const es: Dict = {
       ],
       evidenceTitle: 'Registros de la conferencia',
       evidenceText:
-        'La conferencia de inteligencia emocional ya se dictó en inglés en São Paulo y en portugués en Valinhos (SP).',
+        'La conferencia de inteligencia emocional ya se dictó en inglés para colaboradores de una empresa con actuación internacional, en São Paulo.',
       faqTitle: 'Preguntas sobre la conferencia de inteligencia emocional',
       faq: [
         {

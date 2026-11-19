@@ -221,11 +221,11 @@ export const pt: Dict = {
         'Palestra sobre inteligência emocional conduzida em inglês para colaboradores da Kuraray, em São Paulo.',
     },
     voilier: {
-      label: 'Palestra de inteligência emocional',
+      label: 'Gestão de Energia e Performance Sustentável',
       place: 'Valinhos, SP',
-      text: 'Palestra sobre inteligência emocional para a equipe de uma empresa em Valinhos, no interior de São Paulo.',
+      text: 'A empresa pediu uma palestra sobre gestão de tempo. Depois do diagnóstico, o escopo foi ampliado e o encontro com a equipe, em Valinhos, no interior de São Paulo, tratou de gestão de energia e performance sustentável.',
       textNamed:
-        'Palestra sobre inteligência emocional para a equipe da Voilier, em Valinhos, no interior de São Paulo.',
+        'A Voilier pediu uma palestra sobre gestão de tempo. Depois do diagnóstico, o escopo foi ampliado e o encontro com a equipe, em Valinhos, no interior de São Paulo, tratou de gestão de energia e performance sustentável.',
     },
   },
   images: {
@@ -273,8 +273,8 @@ export const pt: Dict = {
     },
     valinhosGroup: {
       alt: 'Foto em grupo dos participantes com Alex Cassimiro ao final de uma palestra',
-      caption: 'Palestra de inteligência emocional · Valinhos, SP',
-      captionNamed: 'Palestra de inteligência emocional na Voilier · Valinhos, SP',
+      caption: 'Palestra de gestão de energia e performance sustentável · Valinhos, SP',
+      captionNamed: 'Palestra de gestão de energia e performance sustentável na Voilier · Valinhos, SP',
     },
     valinhosPortrait: {
       alt: 'Alex Cassimiro sentado, sorrindo, em um ambiente com plantas',
@@ -409,8 +409,7 @@ export const pt: Dict = {
       },
       cases: {
         title: 'Experiências realizadas',
-        intro:
-          'Registros de palestras de inteligência emocional conduzidas em empresas do estado de São Paulo.',
+        intro: 'Registros de palestras conduzidas em empresas do estado de São Paulo.',
       },
       about: {
         title: 'Sobre Alex',
@@ -576,7 +575,7 @@ export const pt: Dict = {
       ],
       evidenceTitle: 'Registros da palestra',
       evidenceText:
-        'A palestra de inteligência emocional já foi conduzida em inglês em São Paulo e em português em Valinhos (SP).',
+        'A palestra de inteligência emocional já foi conduzida em inglês para colaboradores de uma empresa com atuação internacional, em São Paulo.',
       faqTitle: 'Dúvidas sobre a palestra de inteligência emocional',
       faq: [
         {

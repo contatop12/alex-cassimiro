@@ -271,7 +271,7 @@ const llms = `# Alex Cassimiro
 - O que oferece: palestras corporativas (${pt.themes.map((th) => `${th.title}: ${th.subtitle.toLowerCase()}`).join('; ')}), trilhas de liderança personalizadas e consultoria estratégica empresarial conduzida por Sergio Del Corso (mais de 30 anos em gestão empresarial e desenvolvimento organizacional no Brasil e na Europa).
 - Para quem: RH, T&D, People & Culture, comunicação interna, lideranças e organizadores de eventos corporativos.
 - Idiomas das palestras: português e inglês. O site está em português, inglês e espanhol; as palestras não são conduzidas em espanhol.
-- Evidências: palestra de inteligência emocional conduzida em inglês em São Paulo (SP) e palestra de inteligência emocional em Valinhos (SP). ${pt.pages.about.award}. Fonte oficial: ${facts.honor.sourceUrl}
+- Evidências: palestra de inteligência emocional conduzida em inglês em São Paulo (SP) e palestra de gestão de energia e performance sustentável em Valinhos (SP), com escopo ampliado após diagnóstico (o pedido inicial era gestão de tempo). ${pt.pages.about.award}. Fonte oficial: ${facts.honor.sourceUrl}
 - Como contratar: enviar o briefing pelo formulário (${abs(path('contact', 'pt'))}), WhatsApp (${contact.whatsappDisplay}) ou e-mail (${contact.email}). Alex alinha objetivo, público, idioma e formato e envia uma proposta conforme o escopo. Não há preços públicos.
 
 ## Páginas (português)

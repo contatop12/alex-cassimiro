@@ -121,7 +121,13 @@ describe.skipIf(!built)('HTML gerado', () => {
       const consulting = read(routes.consulting[lang]);
       expect(consulting).toContain('Sergio Del Corso');
       expect(consulting).toContain('/img/sergioPortrait-');
+      // Valinhos foi gestão de energia e performance sustentável, não inteligência emocional
+      expect(read(routes.ei[lang])).not.toContain('/img/valinhosGroup-');
+      expect(read(routes.ei[lang])).not.toContain('Valinhos');
     }
+    expect(text(read('/'))).toContain('Gestão de Energia e Performance Sustentável');
+    expect(text(read('/en/'))).toContain('Energy Management and Sustainable Performance');
+    expect(text(read('/es/'))).toContain('Gestión de Energía y Desempeño Sostenible');
     expect(read('/palestras/')).toContain('Saúde financeira e comportamento');
     expect(text(read('/sobre/'))).toContain(
       'Conhecimento sobre o comportamento humano, conectado à vida real.',
