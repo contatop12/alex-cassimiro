@@ -4,7 +4,7 @@ export const es: Dict = {
   langName: 'Español',
   skipLink: 'Saltar al contenido',
   identity: 'Alex Cassimiro · Conferencista corporativo',
-  role: 'Conferencista corporativo y consultor en desarrollo de liderazgo, personas y cultura',
+  role: 'Educador, conferencista y comunicador',
   nav: {
     label: 'Navegación principal',
     talks: 'Conferencias',
@@ -150,20 +150,23 @@ export const es: Dict = {
       ],
     },
     {
-      id: 'gambling',
-      anchor: 'impactos-de-las-apuestas',
-      title: 'Ludopatía',
-      subtitle: 'La enfermedad provocada por las apuestas',
+      id: 'financial-health',
+      anchor: 'salud-financiera-y-comportamiento',
+      title: 'Salud financiera y comportamiento',
+      subtitle: 'Emociones, decisiones y la relación con el dinero',
       summary:
-        'Impactos de las apuestas en el comportamiento, la productividad y las relaciones, y cómo prevenirlos.',
-      forWhom: 'Equipos y líderes de empresas atentas al crecimiento de las apuestas en línea.',
-      whenToHire: 'Acciones de salud, educación financiera, SIPAT o campañas de prevención.',
+        'Cómo las emociones, los hábitos y las decisiones influyen en la relación con el dinero, y qué tiene que ver eso con la salud mental, las relaciones y el trabajo.',
+      forWhom:
+        'Equipos y líderes de empresas que quieren cuidar el bienestar de las personas de forma integral.',
+      whenToHire:
+        'Semanas de salud y bienestar, semanas de seguridad laboral, acciones de educación financiera o campañas de cuidado de los equipos.',
       covers: [
-        'Cómo las apuestas afectan el comportamiento y las relaciones',
-        'Señales de alerta en el entorno laboral',
-        'Caminos de prevención y de búsqueda de ayuda',
+        'Cómo las emociones y los hábitos influyen en las decisiones financieras',
+        'La relación entre deudas, estrés y salud mental',
+        'Compras impulsivas, apuestas y otras señales de alerta',
+        'Decisiones más conscientes dentro y fuera del trabajo',
       ],
-      note: 'Enfoque educativo y preventivo, sin carácter clínico.',
+      note: 'Enfoque educativo y de concienciación, sin carácter clínico. No sustituye el acompañamiento psicológico o médico ni la orientación financiera especializada.',
     },
   ],
   solutions: [
@@ -191,10 +194,12 @@ export const es: Dict = {
       id: 'consulting',
       page: 'consulting',
       name: 'Consultoría',
-      what: 'Diagnóstico y diseño de soluciones en personas, liderazgo y cultura.',
-      indicated: 'El desafío involucra varias áreas o aún no está claro qué formato lo resuelve.',
-      format: 'Proyecto a la medida, con etapas definidas en el alcance.',
-      depth: 'Diagnóstico, diseño, apoyo a la implementación y acompañamiento.',
+      what: 'Consultoría estratégica en gestión, procesos y desarrollo organizacional, con el consultor Sergio Del Corso.',
+      indicated:
+        'La empresa quiere mejorar la gestión, revisar procesos o encontrar soluciones para desafíos estratégicos.',
+      format:
+        'Proyecto a la medida, estructurado a partir de una conversación sobre el contexto de la empresa.',
+      depth: 'Análisis del contexto, identificación de oportunidades y propuesta de actuación.',
     },
   ],
   hireSteps: [
@@ -279,6 +284,9 @@ export const es: Dict = {
       alt: 'Alex Cassimiro sentado y sonriendo, en un ambiente con plantas',
       caption: 'Alex Cassimiro el día de la conferencia en Valinhos, SP',
     },
+    sergioPortrait: {
+      alt: 'Sergio Del Corso, consultor estratégico, sonriendo, con traje azul marino y corbata',
+    },
   },
   footer: {
     tagline:
@@ -334,9 +342,9 @@ export const es: Dict = {
       'mental-health': 'Salud mental en el trabajo',
       'alcohol-drugs': 'Alcohol y otras drogas',
       'active-care': 'Cultura del cuidado activo',
-      gambling: 'Impactos de las apuestas',
+      'financial-health': 'Salud financiera y comportamiento',
       'leadership-program': 'Programa de liderazgo',
-      consulting: 'Consultoría',
+      consulting: 'Consultoría estratégica',
       other: 'Otro o aún no lo sé',
     },
     formatOptions: {
@@ -387,9 +395,9 @@ export const es: Dict = {
   },
   pages: {
     home: {
-      h1: 'Conferencias corporativas sobre inteligencia emocional y liderazgo',
+      h1: 'Comprender el comportamiento humano es comprender los desafíos de nuestro tiempo.',
       support:
-        'Para líderes y equipos que buscan manejar la presión, afrontar conversaciones difíciles y colaborar mejor. Conferencias disponibles en portugués e inglés.',
+        'Alex Cassimiro traduce el conocimiento científico en conferencias y experiencias que conectan emociones, decisiones y comportamiento con los desafíos reales de la vida y del trabajo.',
       portraitAlt: 'Alex Cassimiro sonriendo, con una camiseta azul marino, frente a una pared roja',
       english: {
         title: 'Experiencia con conferencias en inglés',
@@ -427,28 +435,28 @@ export const es: Dict = {
       faqTitle: 'Preguntas frecuentes',
       faq: [
         {
-          q: '¿En qué idiomas dicta conferencias Alex?',
-          a: 'En portugués y en inglés. Las conferencias no se dictan en español. El idioma del evento se define con la empresa en la propuesta, de forma independiente del idioma en que usted lee este sitio.',
+          q: '¿Qué temas aborda Alex Cassimiro en sus conferencias?',
+          a: 'Alex aborda temas relacionados con el comportamiento humano, las emociones y las relaciones en el trabajo, como inteligencia emocional, salud mental, liderazgo, cultura organizacional, ética y desarrollo humano. Cada experiencia se construye considerando los desafíos y objetivos de la organización.',
+        },
+        {
+          q: '¿Las conferencias se personalizan para cada empresa?',
+          a: 'Sí. El contenido, los ejemplos y las actividades se adaptan al contexto de la empresa, al perfil del público y a los objetivos del encuentro. La propuesta es conectar el conocimiento con situaciones reales de la vida cotidiana.',
         },
         {
           q: '¿Las conferencias son presenciales o en línea?',
-          a: 'Ambas opciones están disponibles. El formato se acuerda en el briefing, según el evento, el público y la agenda.',
+          a: 'Ambas modalidades están disponibles. El formato se define en conjunto, considerando el objetivo del evento, el público y la disponibilidad.',
         },
         {
-          q: '¿La conferencia puede personalizarse para mi empresa?',
-          a: 'Sí. Antes de la propuesta, Alex alinea objetivo, público, idioma y formato. Los ejemplos, las actividades y los énfasis se ajustan a la realidad de la organización.',
+          q: '¿En qué idiomas da conferencias Alex?',
+          a: 'En portugués e inglés. El idioma se define según las necesidades de la empresa y el perfil de los participantes.',
         },
         {
-          q: '¿Qué información debo enviar para recibir una propuesta?',
-          a: 'El nombre de la empresa y el objetivo del evento son el punto de partida. Si ya los tiene, incluya tema, fecha o mes previsto, ciudad, formato, estimación de público e idioma. Se puede comenzar sin fecha, tema o tamaño de público definidos.',
+          q: '¿Cuánto dura una conferencia?',
+          a: 'La duración se define según el objetivo y la programación del evento. Las experiencias pueden estructurarse en distintos formatos, desde encuentros más breves hasta actividades ampliadas con interacción.',
         },
         {
-          q: '¿Cuál es la duración de la conferencia?',
-          a: 'La duración se define en el briefing, según el formato y la programación del evento.',
-        },
-        {
-          q: '¿Alex atiende a empresas fuera de São Paulo?',
-          a: 'Alex ya ha dictado conferencias en São Paulo y en Valinhos (SP). Los eventos presenciales en otras ciudades y los eventos en línea se evalúan en la propuesta, según la agenda y el desplazamiento.',
+          q: '¿Qué información necesito enviar para solicitar una propuesta?',
+          a: 'El nombre de la empresa y el objetivo del evento son suficientes para iniciar la conversación. Si los tiene, también ayudan datos sobre fecha, ciudad, público estimado, tema de interés y formato deseado.',
         },
       ],
       final: {
@@ -457,9 +465,10 @@ export const es: Dict = {
       },
     },
     talks: {
-      h1: 'Conferencias corporativas para líderes y equipos',
+      h1: 'Conferencias sobre el comportamiento humano y los desafíos de nuestro tiempo.',
       intro:
-        'Alex Cassimiro es conferencista corporativo y dicta conferencias en portugués e inglés sobre inteligencia emocional, ética, salud mental, prevención y cultura del cuidado. Cada tema parte de situaciones reales de trabajo y se ajusta al público y al objetivo del evento.',
+        'Experiencias de comunicación que traducen el conocimiento científico en reflexiones y aprendizajes sobre emociones, decisiones, relaciones y comportamiento en el trabajo.',
+      langsNote: 'Las experiencias pueden realizarse en portugués o en inglés.',
       themesTitle: 'Temas disponibles',
       leadership: {
         title: 'Liderazgo en todos los temas',
@@ -493,15 +502,19 @@ export const es: Dict = {
       faq: [
         {
           q: '¿Existe una conferencia específica sobre liderazgo?',
-          a: 'El liderazgo es un eje presente en todos los temas. Para un trabajo centrado en desarrollar líderes, lo recomendable es un programa de liderazgo, diseñado según los desafíos de la empresa.',
+          a: 'El liderazgo es un tema transversal a todas las experiencias. Para las empresas que desean desarrollar competencias de liderazgo de forma continua, también existen los programas de desarrollo, estructurados según los desafíos de la organización.',
         },
         {
-          q: '¿Es posible combinar dos temas en la misma conferencia?',
-          a: 'Las combinaciones pueden evaluarse en el briefing, según el objetivo, el público y el tiempo disponible.',
+          q: '¿Es posible combinar dos o más temas en una conferencia?',
+          a: 'Sí. Los temas pueden relacionarse y adaptarse según el objetivo del evento, el perfil del público y el tiempo disponible. La propuesta es construir una experiencia coherente, sin sobrecargar el contenido.',
         },
         {
-          q: '¿Las conferencias sobre salud mental, alcohol y apuestas tienen carácter clínico?',
-          a: 'No. Estos temas tienen un enfoque educativo y preventivo, y no sustituyen el acompañamiento profesional de salud.',
+          q: '¿Las conferencias sobre salud mental, salud financiera y comportamiento tienen carácter clínico?',
+          a: 'No. Son experiencias educativas y de concienciación, basadas en conocimiento científico. No sustituyen el acompañamiento psicológico o médico ni la orientación financiera especializada.',
+        },
+        {
+          q: '¿Las conferencias pueden adaptarse a distintos públicos y sectores?',
+          a: 'Sí. El lenguaje, los ejemplos y las actividades se ajustan a la realidad de los participantes, ya sean líderes, equipos operativos, áreas administrativas o públicos mixtos.',
         },
       ],
       final: {
@@ -661,9 +674,13 @@ export const es: Dict = {
       },
     },
     leadership: {
-      h1: 'Programas de desarrollo de liderazgo',
+      h1: 'Desarrollar líderes es transformar comportamientos en la práctica.',
       intro:
-        'Desarrollo continuo para líderes, con encuentros, práctica y acompañamiento. Para empresas que necesitan un cambio de comportamiento a lo largo del tiempo, y no solo un evento.',
+        'Recorridos de aprendizaje que conectan comportamiento humano, relaciones y visión de negocio para desarrollar líderes más conscientes, preparados y responsables.',
+      presentation: [
+        'Las organizaciones enfrentan desafíos que no se resuelven con una capacitación aislada. Desarrollar líderes exige continuidad, reflexión, práctica y aplicación en el día a día.',
+        'Los Programas de Liderazgo son recorridos personalizados que combinan conocimiento, experiencias prácticas y acompañamiento para transformar los aprendizajes en comportamientos observables en el entorno laboral.',
+      ],
       compareTitle: '¿Conferencia puntual o programa?',
       compareHead: { aspect: 'Aspecto', talk: 'Conferencia puntual', program: 'Programa de liderazgo' },
       compare: [
@@ -733,93 +750,97 @@ export const es: Dict = {
       faq: [
         {
           q: '¿El programa debe tener diez módulos?',
-          a: 'No. El recorrido anual es un ejemplo. La cantidad y el orden de los módulos se definen con la empresa.',
+          a: 'No. El recorrido presentado es solo una referencia. La cantidad de encuentros, los temas y la duración se definen según los desafíos, los objetivos y la realidad de cada organización.',
         },
         {
-          q: '¿El programa puede conducirse en inglés?',
-          a: 'El idioma se alinea en la propuesta. Las conferencias de Alex se dictan en portugués y en inglés.',
+          q: '¿Cómo se definen los temas del programa?',
+          a: 'La construcción comienza por comprender los desafíos de la empresa y las necesidades de desarrollo de los líderes. A partir de ahí, se definen los temas, la secuencia de los módulos y las actividades prácticas.',
+        },
+        {
+          q: '¿Cómo funciona el acompañamiento entre los encuentros?',
+          a: 'El aprendizaje continúa entre los módulos mediante desafíos aplicados, reflexiones, herramientas y actividades relacionadas con la rutina de liderazgo. El objetivo es favorecer la transferencia del aprendizaje al trabajo.',
+        },
+        {
+          q: '¿El programa puede realizarse de forma presencial, en línea o híbrida?',
+          a: 'Sí. Los encuentros pueden ser presenciales, en línea en vivo o en formato híbrido. La elección considera la estructura de la empresa, la ubicación de los participantes y los objetivos del programa.',
         },
       ],
       final: {
-        title: '¿Diseñamos el programa para sus líderes?',
-        text: 'Cuéntenos cuántos líderes participarían y qué desafíos quiere trabajar la empresa.',
+        title: '¿Desarrollamos juntos a los próximos líderes de su organización?',
+        text: 'Cuéntenos qué desafíos enfrenta su empresa y qué comportamientos desea desarrollar. A partir de esa conversación, podemos diseñar un recorrido de aprendizaje alineado con la realidad del negocio.',
       },
     },
     consulting: {
-      h1: 'Consultoría en liderazgo, personas y cultura',
+      h1: 'Estrategia y gestión para transformar desafíos en resultados.',
       intro:
-        'Para cuando el desafío es mayor que un evento: diagnóstico, diseño de la solución, apoyo a la implementación y acompañamiento, conectando el desarrollo humano con la estrategia del negocio.',
-      whenTitle: 'Cuándo se recomienda la consultoría',
-      when: [
-        'El desafío involucra más de un área o nivel jerárquico.',
-        'La empresa quiere entender la causa antes de elegir un formato.',
-        'Es necesario combinar conferencias, programas y otras acciones en un mismo proyecto.',
-        'La cultura está cambiando y los líderes necesitan apoyo para sostener el cambio.',
+        'Soluciones de consultoría estratégica para empresas que buscan mejorar su gestión, optimizar procesos y fortalecer su desarrollo organizacional.',
+      presentationTitle: 'Consultoría estratégica empresarial',
+      presentation: [
+        'A través de una alianza con el consultor Sergio Del Corso, unimos experiencia ejecutiva y visión estratégica para apoyar a las empresas en la identificación de oportunidades, la mejora de la gestión y el desarrollo de soluciones prácticas para sus negocios.',
+        'El trabajo combina conocimiento en gestión empresarial, análisis de procesos y comprensión de los desafíos organizacionales, con foco en resultados consistentes.',
       ],
-      processTitle: 'Cómo funciona',
-      process: [
-        {
-          title: 'Conexión y briefing',
-          text: 'Entender el contexto, los desafíos y los objetivos de la organización.',
-        },
-        {
-          title: 'Diagnóstico personalizado',
-          text: 'Mapear personas, procesos y cultura para identificar necesidades reales.',
-        },
-        {
-          title: 'Diseño de la solución',
-          text: 'Propuesta con contenido, metodología y formato alineados con el negocio.',
-        },
-        {
-          title: 'Implementación',
-          text: 'Conducción de las actividades con interacción, práctica y conexión con la realidad de la empresa.',
-        },
-        {
-          title: 'Acompañamiento',
-          text: 'Apoyo continuo con indicadores y retroalimentación para sostener la aplicación en el día a día.',
-        },
+      focusTitle: 'Frentes de actuación',
+      focus: [
+        'Mejora de la gestión',
+        'Optimización de procesos',
+        'Desarrollo organizacional',
+        'Soluciones prácticas, con foco en resultados',
       ],
-      scopeTitle: 'Qué puede formar parte del alcance',
-      scope: [
-        'Diagnóstico y diseño de soluciones a la medida',
-        'Proyectos de cultura, liderazgo y personas',
-        'Apoyo a la implementación',
-        'Conexión entre el desarrollo humano y la estrategia del negocio',
-      ],
+      partner: {
+        role: 'Consultor estratégico',
+        name: 'Sergio Del Corso',
+        highlight:
+          'Más de 30 años de experiencia en gestión empresarial y desarrollo organizacional en Brasil y en Europa.',
+        bio: [
+          'Sergio Del Corso es consultor estratégico, graduado en Contaduría y especialista en Management. Con más de 30 años de experiencia en Brasil y en Europa, construyó una sólida trayectoria ejecutiva en gestión empresarial y desarrollo organizacional.',
+          'Su trabajo se orienta a mejorar la gestión, optimizar procesos y construir soluciones prácticas para los desafíos de los negocios, siempre con foco en resultados.',
+        ],
+      },
       faqTitle: 'Preguntas sobre la consultoría',
       faq: [
         {
-          q: '¿Cómo comienza un proyecto de consultoría?',
-          a: 'Con una conversación de briefing sobre el contexto y los objetivos. A partir de ella, Alex propone el alcance del diagnóstico y de las etapas siguientes.',
+          q: '¿Qué tipo de empresa puede contratar la consultoría?',
+          a: 'Empresas que desean mejorar su gestión, revisar procesos, identificar oportunidades de mejora y desarrollar soluciones para sus desafíos estratégicos y organizacionales.',
         },
         {
-          q: '¿La consultoría incluye conferencias y programas?',
-          a: 'Puede incluirlos, cuando tenga sentido para el objetivo. La combinación de acciones se define en el diseño de la solución.',
+          q: '¿Cómo funciona el trabajo de consultoría?',
+          a: 'El trabajo comienza con una conversación para comprender el contexto y los desafíos de la empresa. A partir de ese análisis, se identifican oportunidades y se estructura una propuesta de actuación adecuada a las necesidades del negocio.',
+        },
+        {
+          q: '¿Quién conduce los proyectos de consultoría?',
+          a: 'Los proyectos los conduce el consultor Sergio Del Corso, profesional con más de 30 años de experiencia en gestión empresarial y desarrollo organizacional, en alianza con Alex Cassimiro.',
+        },
+        {
+          q: '¿La consultoría ofrece soluciones personalizadas?',
+          a: 'Sí. Cada proyecto considera la realidad, los objetivos y las necesidades específicas de la empresa. Las soluciones se construyen según el contexto de cada negocio.',
         },
       ],
       final: {
-        title: 'Cuéntenos el desafío de su empresa',
-        text: 'Una primera conversación ayuda a entender si el camino es una conferencia, un programa o una consultoría.',
+        title: '¿Conversamos sobre los desafíos de su negocio?',
+        text: 'Cuéntenos el contexto y los desafíos de su empresa. A partir de esa conversación, estructuramos una propuesta de actuación adecuada al negocio.',
       },
     },
     about: {
-      h1: 'Acerca de Alex Cassimiro',
-      lead: 'Conferencista corporativo y consultor en desarrollo de liderazgo, personas y cultura.',
+      h1: 'Conocimiento sobre el comportamiento humano, conectado con la vida real.',
+      lead: 'Soy Alex Cassimiro. Educador, conferencista y comunicador. Traduzco el conocimiento científico en experiencias que conectan emociones, decisiones, aprendizaje y comportamiento con los desafíos de nuestro tiempo.',
       bio: [
-        'Alex Cassimiro trabaja desde hace más de 17 años en el desarrollo de personas y líderes, en distintos sectores y contextos organizacionales. Su enfoque combina contenido, experiencia práctica y metodologías aplicables para traducir desafíos humanos y organizacionales en desarrollo con relevancia para el negocio.',
-        'Graduado en Administración con énfasis en Comercio Exterior y con posgrado en Neuropsicopedagogía, Alex une conocimientos sobre aprendizaje, inteligencia emocional y práctica corporativa. Su trayectoria incluye su actuación en el SESI, la fundación de la Escola Associativa Waldorf Aracê, en Indaiatuba, y experiencia con industrias, tecnología, servicios, educación y tercer sector.',
-        'Hoy, Alex trabaja con empresas en tres frentes: conferencias corporativas, en portugués e inglés; programas de desarrollo de liderazgo; y consultoría en personas, liderazgo y cultura.',
+        'Desde hace más de 17 años trabajo con desarrollo humano, aprendizaje y comportamiento en distintos contextos educativos y organizacionales. Mi trayectoria incluye mi labor como Instructor Corporativo en el SESI-SP, la fundación de la Escuela Asociativa Waldorf Aracê, en Indaiatuba, y experiencia con industrias, tecnología, servicios, educación y el tercer sector.',
+        'Mi trabajo nace de una inquietud: comprender cómo las personas sienten, aprenden, toman decisiones y se relacionan frente a los desafíos de la vida contemporánea.',
+        'Con formación en Administración y Neuropsicopedagogía, conecto conocimientos sobre aprendizaje, emociones y comportamiento con situaciones reales de la vida cotidiana.',
+        'Mi labor es traducir conceptos complejos en experiencias de comunicación accesibles, sensibles y fundamentadas, acercando el conocimiento científico a la realidad de las personas.',
+        'Actualmente, dedico especial atención a la relación entre salud financiera, comportamiento humano y salud mental, sin dejar de trabajar en el desarrollo de líderes y en las relaciones organizacionales.',
       ],
       honor:
-        'En 2018, Alex Cassimiro recibió de la Cámara Municipal de Indaiatuba el título honorífico de Ciudadano Indaiatubano.',
+        'En 2018, fui homenajeado por la Cámara Municipal de Indaiatuba con el título honorífico de Ciudadano Indaiatubano.',
       honorSource:
         'Fuente: acta de la sesión solemne del 7 de diciembre de 2018, página 2 (Cámara Municipal de Indaiatuba)',
+      award: 'Título honorífico de Ciudadano Indaiatubano, Cámara Municipal de Indaiatuba (2018)',
       factsTitle: 'En cifras',
       facts: [
         { value: '+17 años', label: 'de experiencia en desarrollo de personas y liderazgo' },
         { value: '+1.000', label: 'líderes capacitados en programas de liderazgo' },
       ],
-      approachTitle: 'Cómo trabaja Alex',
+      approachTitle: 'Cómo trabajo',
       approach: [
         {
           title: 'Las personas en el centro',
@@ -832,10 +853,10 @@ export const es: Dict = {
         { title: 'Personalización real', text: 'Contenido ajustado a la realidad de cada organización.' },
       ],
       quote:
-        'Creo en el poder de las personas y de las organizaciones que aprenden, se conectan y evolucionan juntas. Transformo el conocimiento en acción y el desarrollo en resultados reales.',
+        'Creo que educar no es solo transmitir información. Es crear las condiciones para que las personas comprendan mejor su realidad, amplíen perspectivas y tomen decisiones más conscientes.',
       quoteSource: 'Alex Cassimiro (traducido del portugués)',
       final: {
-        title: '¿Quiere invitar a Alex a su evento?',
+        title: '¿Conversamos sobre lo que podemos construir juntos?',
         text: 'Envíe el briefing y reciba una propuesta según el alcance.',
       },
     },
@@ -929,12 +950,12 @@ export const es: Dict = {
     home: {
       title: 'Alex Cassimiro · Conferencista corporativo en liderazgo',
       description:
-        'Conferencista corporativo: conferencias de inteligencia emocional y liderazgo en portugués e inglés para líderes y equipos. Solicite una propuesta.',
+        'Conferencias y experiencias sobre comportamiento humano, emociones y decisiones en el trabajo: inteligencia emocional, salud mental, liderazgo y cultura. En portugués e inglés. Solicite una propuesta.',
     },
     talks: {
-      title: 'Conferencias corporativas · Temas para empresas | Alex Cassimiro',
+      title: 'Conferencias corporativas sobre comportamiento humano | Alex Cassimiro',
       description:
-        'Temas de conferencias corporativas de Alex Cassimiro: inteligencia emocional, ética, salud mental, alcohol y drogas, cuidado activo y apuestas. En portugués e inglés.',
+        'Conferencias de Alex Cassimiro sobre comportamiento humano: inteligencia emocional, ética, salud mental, alcohol y drogas, cuidado activo y salud financiera. En portugués o inglés.',
     },
     ei: {
       title: 'Conferencia de inteligencia emocional para empresas | Alex Cassimiro',
@@ -949,17 +970,17 @@ export const es: Dict = {
     leadership: {
       title: 'Programas de desarrollo de liderazgo | Alex Cassimiro',
       description:
-        'Programas de liderazgo con encuentros, práctica y acompañamiento. Vea la diferencia entre conferencia y programa y un ejemplo de recorrido anual adaptable.',
+        'Programas de Liderazgo: recorridos personalizados que conectan comportamiento humano, relaciones y visión de negocio, con encuentros, práctica y acompañamiento entre módulos.',
     },
     consulting: {
-      title: 'Consultoría en liderazgo, personas y cultura | Alex Cassimiro',
+      title: 'Consultoría estratégica empresarial | Alex Cassimiro',
       description:
-        'Consultoría en desarrollo de liderazgo, personas y cultura: diagnóstico, diseño de la solución, implementación y acompañamiento.',
+        'Consultoría estratégica para mejorar la gestión, optimizar procesos y fortalecer el desarrollo organizacional, conducida por Sergio Del Corso en alianza con Alex Cassimiro.',
     },
     about: {
-      title: 'Acerca de Alex Cassimiro · Biografía del conferencista',
+      title: 'Acerca de Alex Cassimiro · Educador, conferencista y comunicador',
       description:
-        'Biografía de Alex Cassimiro: más de 17 años en desarrollo de personas y líderes, conferencias en portugués e inglés y título de Ciudadano Indaiatubano (2018).',
+        'Alex Cassimiro es educador, conferencista y comunicador. Desde hace más de 17 años traduce conocimiento científico sobre emociones, aprendizaje y comportamiento en experiencias para empresas. Ciudadano Indaiatubano (2018).',
     },
     contact: {
       title: 'Solicitar una propuesta de conferencia | Alex Cassimiro',

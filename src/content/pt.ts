@@ -4,7 +4,7 @@ export const pt: Dict = {
   langName: 'Português',
   skipLink: 'Pular para o conteúdo',
   identity: 'Alex Cassimiro · Palestrante corporativo',
-  role: 'Palestrante corporativo e consultor em desenvolvimento de lideranças, pessoas e cultura',
+  role: 'Educador, palestrante e comunicador',
   nav: {
     label: 'Navegação principal',
     talks: 'Palestras',
@@ -148,19 +148,23 @@ export const pt: Dict = {
       ],
     },
     {
-      id: 'gambling',
-      anchor: 'impactos-das-apostas',
-      title: 'Ludopatia',
-      subtitle: 'O adoecimento por conta das apostas',
-      summary: 'Impactos das apostas no comportamento, na produtividade e nas relações, e como prevenir.',
-      forWhom: 'Equipes e lideranças de empresas atentas ao crescimento das apostas on-line.',
-      whenToHire: 'Ações de saúde, educação financeira, SIPAT ou campanhas de prevenção.',
+      id: 'financial-health',
+      anchor: 'saude-financeira-e-comportamento',
+      title: 'Saúde financeira e comportamento',
+      subtitle: 'Emoções, escolhas e a relação com o dinheiro',
+      summary:
+        'Como emoções, hábitos e decisões influenciam a relação com o dinheiro, e o que isso tem a ver com saúde mental, relações e trabalho.',
+      forWhom:
+        'Equipes e lideranças de empresas que querem cuidar do bem-estar das pessoas de forma integral.',
+      whenToHire:
+        'Semanas de saúde e bem-estar, SIPAT, ações de educação financeira ou campanhas de cuidado com as equipes.',
       covers: [
-        'Como as apostas afetam comportamento e relações',
-        'Sinais de alerta no ambiente de trabalho',
-        'Caminhos de prevenção e de busca por ajuda',
+        'Como emoções e hábitos influenciam as decisões financeiras',
+        'Relações entre dívidas, estresse e saúde mental',
+        'Consumo por impulso, apostas e outros sinais de alerta',
+        'Escolhas mais conscientes no trabalho e fora dele',
       ],
-      note: 'Abordagem educativa e preventiva, sem caráter clínico.',
+      note: 'Abordagem educativa e de conscientização, sem caráter clínico. Não substitui acompanhamento psicológico, médico ou orientação financeira especializada.',
     },
   ],
   solutions: [
@@ -187,10 +191,11 @@ export const pt: Dict = {
       id: 'consulting',
       page: 'consulting',
       name: 'Consultoria',
-      what: 'Diagnóstico e desenho de soluções de pessoas, liderança e cultura.',
-      indicated: 'O desafio envolve várias áreas ou ainda não está claro qual formato resolve.',
-      format: 'Projeto sob medida, com etapas definidas no escopo.',
-      depth: 'Diagnóstico, desenho, apoio à implementação e acompanhamento.',
+      what: 'Consultoria estratégica em gestão, processos e desenvolvimento organizacional, com o consultor Sergio Del Corso.',
+      indicated:
+        'A empresa quer aprimorar a gestão, revisar processos ou encontrar soluções para desafios estratégicos.',
+      format: 'Projeto sob medida, estruturado a partir de uma conversa sobre o contexto da empresa.',
+      depth: 'Análise do contexto, identificação de oportunidades e proposta de atuação.',
     },
   ],
   hireSteps: [
@@ -275,6 +280,9 @@ export const pt: Dict = {
       alt: 'Alex Cassimiro sentado, sorrindo, em um ambiente com plantas',
       caption: 'Alex Cassimiro no dia da palestra em Valinhos, SP',
     },
+    sergioPortrait: {
+      alt: 'Sergio Del Corso, consultor estratégico, sorrindo, de terno azul-marinho e gravata',
+    },
   },
   footer: {
     tagline:
@@ -329,9 +337,9 @@ export const pt: Dict = {
       'mental-health': 'Saúde mental no trabalho',
       'alcohol-drugs': 'Álcool e outras drogas',
       'active-care': 'Cultura do cuidado ativo',
-      gambling: 'Impactos das apostas',
+      'financial-health': 'Saúde financeira e comportamento',
       'leadership-program': 'Trilha de liderança',
-      consulting: 'Consultoria',
+      consulting: 'Consultoria estratégica',
       other: 'Outro ou ainda não sei',
     },
     formatOptions: {
@@ -382,9 +390,9 @@ export const pt: Dict = {
   },
   pages: {
     home: {
-      h1: 'Palestras corporativas sobre inteligência emocional e liderança',
+      h1: 'Compreender o comportamento humano é compreender os desafios do nosso tempo.',
       support:
-        'Para líderes e equipes que precisam lidar com pressão, conduzir conversas difíceis e trabalhar melhor juntos. Palestras em português e inglês.',
+        'Alex Cassimiro traduz conhecimento científico em palestras e experiências que conectam emoções, escolhas e comportamento aos desafios reais da vida e do trabalho.',
       portraitAlt: 'Alex Cassimiro sorrindo, de camiseta azul-marinho, diante de uma parede vermelha',
       english: {
         title: 'Experiência com palestras em inglês',
@@ -422,28 +430,28 @@ export const pt: Dict = {
       faqTitle: 'Perguntas frequentes',
       faq: [
         {
-          q: 'Em quais idiomas Alex faz palestras?',
-          a: 'Em português e em inglês. O idioma da palestra é definido com a empresa na proposta e não depende do idioma em que você lê este site.',
+          q: 'Quais temas Alex Cassimiro aborda em suas palestras?',
+          a: 'Alex aborda temas relacionados ao comportamento humano, às emoções e às relações no trabalho, incluindo inteligência emocional, saúde mental, liderança, cultura organizacional, ética e desenvolvimento humano. Cada experiência é construída considerando os desafios e objetivos da organização.',
+        },
+        {
+          q: 'As palestras são personalizadas para cada empresa?',
+          a: 'Sim. O conteúdo, os exemplos e as atividades são adaptados ao contexto da empresa, ao perfil do público e aos objetivos do encontro. A proposta é conectar conhecimento e situações reais do cotidiano.',
         },
         {
           q: 'As palestras são presenciais ou on-line?',
-          a: 'As duas opções estão disponíveis. O formato é combinado no briefing, de acordo com o evento, o público e a agenda.',
+          a: 'As duas modalidades estão disponíveis. O formato é definido em conjunto, considerando o objetivo do evento, o público e a disponibilidade.',
         },
         {
-          q: 'A palestra pode ser personalizada para a minha empresa?',
-          a: 'Sim. Antes da proposta, Alex alinha objetivo, público, idioma e formato. Exemplos, atividades e ênfases são ajustados à realidade da organização.',
+          q: 'Em quais idiomas Alex realiza palestras?',
+          a: 'Em português e inglês. O idioma é definido conforme a necessidade da empresa e o perfil dos participantes.',
         },
         {
-          q: 'Quais informações preciso enviar para receber uma proposta?',
-          a: 'Nome da empresa e objetivo do evento são o ponto de partida. Se já tiver, inclua tema, data ou mês previsto, cidade, formato, estimativa de público e idioma. Dá para começar sem data, tema ou tamanho de público definidos.',
+          q: 'Qual é a duração de uma palestra?',
+          a: 'A duração é definida de acordo com o objetivo e a programação do evento. As experiências podem ser estruturadas em diferentes formatos, desde encontros mais curtos até atividades ampliadas com interação.',
         },
         {
-          q: 'Qual é a duração da palestra?',
-          a: 'A duração é definida no briefing, conforme o formato e a programação do evento.',
-        },
-        {
-          q: 'Alex atende empresas fora de São Paulo?',
-          a: 'Alex já realizou palestras em São Paulo e em Valinhos (SP). Eventos presenciais em outras cidades e eventos on-line são avaliados na proposta, de acordo com agenda e deslocamento.',
+          q: 'Quais informações preciso enviar para solicitar uma proposta?',
+          a: 'O nome da empresa e o objetivo do evento são suficientes para iniciar a conversa. Se disponíveis, também ajudam informações sobre data, cidade, público estimado, tema de interesse e formato desejado.',
         },
       ],
       final: {
@@ -452,9 +460,10 @@ export const pt: Dict = {
       },
     },
     talks: {
-      h1: 'Palestras corporativas para líderes e equipes',
+      h1: 'Palestras sobre comportamento humano e os desafios do nosso tempo.',
       intro:
-        'Alex Cassimiro é palestrante corporativo e conduz palestras em português e inglês sobre inteligência emocional, ética, saúde mental, prevenção e cultura do cuidado. Cada tema parte de situações reais de trabalho e é ajustado ao público e ao objetivo do evento.',
+        'Experiências de comunicação que traduzem conhecimento científico em reflexões e aprendizados sobre emoções, escolhas, relações e comportamento no trabalho.',
+      langsNote: 'As experiências podem ser realizadas em português ou inglês.',
       themesTitle: 'Temas disponíveis',
       leadership: {
         title: 'Liderança em todos os temas',
@@ -488,15 +497,19 @@ export const pt: Dict = {
       faq: [
         {
           q: 'Existe uma palestra específica sobre liderança?',
-          a: 'Liderança é um eixo presente em todos os temas. Para um trabalho focado em desenvolver líderes, a indicação é uma trilha de liderança, desenhada conforme os desafios da empresa.',
+          a: 'A liderança é um tema transversal às experiências. Para empresas que desejam desenvolver competências de liderança de forma contínua, também existem as trilhas de desenvolvimento, estruturadas conforme os desafios da organização.',
         },
         {
-          q: 'É possível combinar dois temas na mesma palestra?',
-          a: 'Combinações podem ser avaliadas no briefing, conforme objetivo, público e tempo disponível.',
+          q: 'É possível combinar dois ou mais temas em uma palestra?',
+          a: 'Sim. Os temas podem ser relacionados e adaptados conforme o objetivo do evento, o perfil do público e o tempo disponível. A proposta é construir uma experiência coerente, sem sobrecarregar o conteúdo.',
         },
         {
-          q: 'As palestras sobre saúde mental, álcool e apostas têm caráter clínico?',
-          a: 'Não. Esses temas têm abordagem educativa e preventiva, e não substituem acompanhamento profissional de saúde.',
+          q: 'As palestras sobre saúde mental, saúde financeira e comportamento têm caráter clínico?',
+          a: 'Não. São experiências educativas e de conscientização, fundamentadas em conhecimento científico. Não substituem acompanhamento psicológico, médico ou orientação financeira especializada.',
+        },
+        {
+          q: 'As palestras podem ser adaptadas para diferentes públicos e segmentos?',
+          a: 'Sim. A linguagem, os exemplos e as atividades são ajustados à realidade dos participantes, sejam lideranças, equipes operacionais, áreas administrativas ou públicos mistos.',
         },
       ],
       final: {
@@ -644,9 +657,13 @@ export const pt: Dict = {
       },
     },
     leadership: {
-      h1: 'Trilhas de desenvolvimento de liderança',
+      h1: 'Desenvolver líderes é transformar comportamentos na prática.',
       intro:
-        'Desenvolvimento contínuo para líderes, com encontros, prática e acompanhamento. Para empresas que precisam de mudança de comportamento ao longo do tempo, e não só de um evento.',
+        'Jornadas de aprendizagem que conectam comportamento humano, relações e visão de negócio para desenvolver lideranças mais conscientes, preparadas e responsáveis.',
+      presentation: [
+        'As organizações enfrentam desafios que não se resolvem com um treinamento isolado. Desenvolver lideranças exige continuidade, reflexão, prática e aplicação no cotidiano.',
+        'As Trilhas de Liderança são jornadas personalizadas que combinam conhecimento, experiências práticas e acompanhamento para transformar aprendizados em comportamentos observáveis no ambiente de trabalho.',
+      ],
       compareTitle: 'Palestra pontual ou trilha?',
       compareHead: { aspect: 'Aspecto', talk: 'Palestra pontual', program: 'Trilha de liderança' },
       compare: [
@@ -701,93 +718,98 @@ export const pt: Dict = {
       faq: [
         {
           q: 'A trilha precisa ter dez módulos?',
-          a: 'Não. A jornada anual é um exemplo. A quantidade e a ordem dos módulos são definidas com a empresa.',
+          a: 'Não. A jornada apresentada é apenas uma referência. A quantidade de encontros, os temas e a duração são definidos conforme os desafios, os objetivos e a realidade de cada organização.',
         },
         {
-          q: 'A trilha pode ser conduzida em inglês?',
-          a: 'O idioma é alinhado na proposta. As palestras de Alex são conduzidas em português e em inglês.',
+          q: 'Como são definidos os temas da trilha?',
+          a: 'A construção começa pela compreensão dos desafios da empresa e das necessidades de desenvolvimento dos líderes. A partir disso, são definidos os temas, a sequência dos módulos e as atividades práticas.',
+        },
+        {
+          q: 'Como funciona o acompanhamento entre os encontros?',
+          a: 'A aprendizagem continua entre os módulos por meio de desafios aplicados, reflexões, ferramentas e atividades relacionadas à rotina de liderança. O objetivo é favorecer a transferência do aprendizado para o trabalho.',
+        },
+        {
+          q: 'A trilha pode ser realizada presencialmente, on-line ou em formato híbrido?',
+          a: 'Sim. Os encontros podem acontecer presencialmente, on-line ao vivo ou em formato híbrido. A escolha considera a estrutura da empresa, a localização dos participantes e os objetivos do programa.',
         },
       ],
       final: {
-        title: 'Vamos desenhar a trilha dos seus líderes?',
-        text: 'Conte quantos líderes participariam e quais desafios a empresa quer trabalhar.',
+        title: 'Vamos desenvolver as próximas lideranças da sua organização?',
+        text: 'Conte quais desafios sua empresa enfrenta e quais comportamentos deseja desenvolver. A partir dessa conversa, podemos desenhar uma jornada de aprendizagem alinhada à realidade do negócio.',
       },
     },
     consulting: {
-      h1: 'Consultoria em desenvolvimento de lideranças, pessoas e cultura',
+      h1: 'Estratégia e gestão para transformar desafios em resultados.',
       intro:
-        'Para quando o desafio é maior que um evento: diagnóstico, desenho da solução, apoio à implementação e acompanhamento, conectando desenvolvimento humano à estratégia do negócio.',
-      whenTitle: 'Quando a consultoria é indicada',
-      when: [
-        'O desafio envolve mais de uma área ou nível hierárquico.',
-        'A empresa quer entender a causa antes de escolher um formato.',
-        'É preciso combinar palestras, trilhas e outras ações em um mesmo projeto.',
-        'A cultura está mudando e as lideranças precisam de apoio para sustentar a mudança.',
+        'Soluções de consultoria estratégica para empresas que buscam aprimorar sua gestão, otimizar processos e fortalecer seu desenvolvimento organizacional.',
+      presentationTitle: 'Consultoria estratégica empresarial',
+      presentation: [
+        'Por meio de uma parceria com o consultor Sergio Del Corso, conectamos experiência executiva e visão estratégica para apoiar empresas na identificação de oportunidades, melhoria da gestão e desenvolvimento de soluções práticas para seus negócios.',
+        'A atuação combina conhecimento em gestão empresarial, análise de processos e compreensão dos desafios organizacionais, com foco em resultados consistentes.',
       ],
-      processTitle: 'Como funciona',
-      process: [
-        {
-          title: 'Conexão e briefing',
-          text: 'Entender o contexto, os desafios e os objetivos da organização.',
-        },
-        {
-          title: 'Diagnóstico personalizado',
-          text: 'Mapear pessoas, processos e cultura para identificar necessidades reais.',
-        },
-        {
-          title: 'Desenho da solução',
-          text: 'Proposta com conteúdo, metodologia e formato alinhados ao negócio.',
-        },
-        {
-          title: 'Implementação',
-          text: 'Condução das atividades com interação, prática e conexão com a realidade da empresa.',
-        },
-        {
-          title: 'Acompanhamento',
-          text: 'Apoio contínuo com indicadores e feedbacks para sustentar a aplicação no dia a dia.',
-        },
+      focusTitle: 'Frentes de atuação',
+      focus: [
+        'Melhoria da gestão',
+        'Otimização de processos',
+        'Desenvolvimento organizacional',
+        'Soluções práticas, com foco em resultados',
       ],
-      scopeTitle: 'O que pode fazer parte do escopo',
-      scope: [
-        'Diagnóstico e desenho de soluções sob medida',
-        'Projetos de cultura, liderança e pessoas',
-        'Apoio à implementação',
-        'Conexão entre desenvolvimento humano e estratégia do negócio',
-      ],
+      partner: {
+        role: 'Consultor estratégico',
+        name: 'Sergio Del Corso',
+        highlight:
+          'Mais de 30 anos de experiência em gestão empresarial e desenvolvimento organizacional no Brasil e na Europa.',
+        bio: [
+          'Sergio Del Corso é consultor estratégico, graduado em Ciências Contábeis e especialista em Management. Com mais de 30 anos de experiência no Brasil e na Europa, construiu uma sólida trajetória executiva em gestão empresarial e desenvolvimento organizacional.',
+          'Sua atuação é orientada à melhoria da gestão, otimização de processos e construção de soluções práticas para os desafios dos negócios, sempre com foco em resultados.',
+        ],
+      },
       faqTitle: 'Dúvidas sobre a consultoria',
       faq: [
         {
-          q: 'Como começa um projeto de consultoria?',
-          a: 'Com uma conversa de briefing sobre o contexto e os objetivos. A partir dela, Alex propõe o escopo do diagnóstico e das etapas seguintes.',
+          q: 'Que tipo de empresa pode contratar a consultoria?',
+          a: 'Empresas que desejam aprimorar sua gestão, revisar processos, identificar oportunidades de melhoria e desenvolver soluções para seus desafios estratégicos e organizacionais.',
         },
         {
-          q: 'A consultoria inclui palestras e trilhas?',
-          a: 'Pode incluir, quando fizer sentido para o objetivo. A combinação de ações é definida no desenho da solução.',
+          q: 'Como funciona o trabalho de consultoria?',
+          a: 'O trabalho começa com uma conversa para compreender o contexto e os desafios da empresa. A partir dessa análise, são identificadas oportunidades e estruturada uma proposta de atuação adequada às necessidades do negócio.',
+        },
+        {
+          q: 'Quem conduz os projetos de consultoria?',
+          a: 'Os projetos são conduzidos pelo consultor Sergio Del Corso, profissional com mais de 30 anos de experiência em gestão empresarial e desenvolvimento organizacional, em parceria com Alex Cassimiro.',
+        },
+        {
+          q: 'A consultoria oferece soluções personalizadas?',
+          a: 'Sim. Cada projeto considera a realidade, os objetivos e as necessidades específicas da empresa. As soluções são construídas de acordo com o contexto de cada negócio.',
         },
       ],
       final: {
-        title: 'Conte o desafio da sua empresa',
-        text: 'Uma primeira conversa ajuda a entender se o caminho é palestra, trilha ou consultoria.',
+        title: 'Vamos conversar sobre os desafios do seu negócio?',
+        text: 'Conte o contexto e os desafios da sua empresa. A partir dessa conversa, estruturamos uma proposta de atuação adequada ao negócio.',
       },
     },
     about: {
-      h1: 'Sobre Alex Cassimiro',
-      lead: 'Palestrante corporativo e consultor em desenvolvimento de lideranças, pessoas e cultura.',
+      h1: 'Conhecimento sobre o comportamento humano, conectado à vida real.',
+      lead: 'Sou Alex Cassimiro. Educador, palestrante e comunicador. Traduzo conhecimento científico em experiências que conectam emoções, escolhas, aprendizagem e comportamento aos desafios do nosso tempo.',
       bio: [
-        'Alex Cassimiro trabalha há mais de 17 anos com desenvolvimento de pessoas e lideranças, em diferentes segmentos e contextos organizacionais. Sua abordagem combina conteúdo, experiência prática e metodologias aplicáveis para traduzir desafios humanos e organizacionais em desenvolvimento com relevância para o negócio.',
-        'Formado em Administração com ênfase em Comércio Exterior e pós-graduado em Neuropsicopedagogia, Alex une conhecimentos sobre aprendizagem, inteligência emocional e prática corporativa. Sua trajetória inclui atuação no SESI, a fundação da Escola Associativa Waldorf Aracê, em Indaiatuba, e experiência com indústrias, tecnologia, serviços, educação e terceiro setor.',
-        'Hoje, Alex atua com empresas em três frentes: palestras corporativas, em português e em inglês; trilhas de desenvolvimento de liderança; e consultoria em pessoas, liderança e cultura.',
+        'Há mais de 17 anos trabalho com desenvolvimento humano, aprendizagem e comportamento em diferentes contextos educacionais e organizacionais. Minha trajetória inclui atuação no SESI-SP como Instrutor Corporativo, a fundação da Escola Associativa Waldorf Aracê, em Indaiatuba, e experiência com indústrias, tecnologia, serviços, educação e terceiro setor.',
+        'Minha atuação nasce de uma inquietação: compreender como as pessoas sentem, aprendem, tomam decisões e se relacionam diante dos desafios da vida contemporânea.',
+        'Com formação em Administração e Neuropsicopedagogia, conecto conhecimentos sobre aprendizagem, emoções e comportamento a situações reais do cotidiano.',
+        'Meu trabalho é traduzir conceitos complexos em experiências de comunicação acessíveis, sensíveis e fundamentadas, aproximando conhecimento científico da realidade das pessoas.',
+        'Atualmente, dedico especial atenção à relação entre saúde financeira, comportamento humano e saúde mental, sem deixar de atuar no desenvolvimento de lideranças e nas relações organizacionais.',
       ],
       honor:
-        'Em 2018, Alex Cassimiro recebeu da Câmara Municipal de Indaiatuba o título honorífico de Cidadão Indaiatubano.',
+        'Em 2018, fui homenageado pela Câmara Municipal de Indaiatuba com o título honorífico de Cidadão Indaiatubano.',
       honorSource:
         'Fonte: ata da sessão solene de 7 de dezembro de 2018, página 2 (Câmara Municipal de Indaiatuba)',
+      award:
+        'Título honorífico de Cidadão Indaiatubano, concedido pela Câmara Municipal de Indaiatuba (2018)',
       factsTitle: 'Em números',
       facts: [
         { value: '+17 anos', label: 'de experiência em desenvolvimento de pessoas e lideranças' },
         { value: '+1.000', label: 'líderes treinados em programas de liderança' },
       ],
-      approachTitle: 'Como Alex trabalha',
+      approachTitle: 'Como trabalho',
       approach: [
         { title: 'Pessoas no centro', text: 'Desenvolvimento humano integrado à estratégia do negócio.' },
         {
@@ -797,10 +819,10 @@ export const pt: Dict = {
         { title: 'Personalização de verdade', text: 'Conteúdo ajustado à realidade de cada organização.' },
       ],
       quote:
-        'Acredito no poder das pessoas e das organizações que aprendem, se conectam e evoluem juntas. Transformo conhecimento em ação e desenvolvimento em resultados reais.',
+        'Acredito que educar não é apenas transmitir informações. É criar condições para que as pessoas compreendam melhor sua realidade, ampliem perspectivas e façam escolhas mais conscientes.',
       quoteSource: 'Alex Cassimiro',
       final: {
-        title: 'Quer levar Alex para o seu evento?',
+        title: 'Vamos conversar sobre o que podemos construir juntos?',
         text: 'Envie o briefing e receba uma proposta de acordo com o escopo.',
       },
     },
@@ -893,12 +915,12 @@ export const pt: Dict = {
     home: {
       title: 'Alex Cassimiro · Palestrante corporativo de inteligência emocional e liderança',
       description:
-        'Palestras corporativas sobre inteligência emocional e liderança, em português e inglês, para líderes e equipes. Trilhas de liderança e consultoria. Solicite uma proposta.',
+        'Palestras e experiências sobre comportamento humano, emoções e escolhas no trabalho: inteligência emocional, saúde mental, liderança e cultura. Em português e inglês. Solicite uma proposta.',
     },
     talks: {
-      title: 'Palestras corporativas · Temas para empresas | Alex Cassimiro',
+      title: 'Palestras corporativas sobre comportamento humano | Alex Cassimiro',
       description:
-        'Temas de palestras corporativas de Alex Cassimiro: inteligência emocional, ética e integridade, saúde mental, álcool e drogas, cultura do cuidado e apostas. Em português e inglês.',
+        'Palestras de Alex Cassimiro sobre comportamento humano: inteligência emocional, ética e integridade, saúde mental, álcool e drogas, cultura do cuidado e saúde financeira. Em português ou inglês.',
     },
     ei: {
       title: 'Palestra de inteligência emocional para empresas | Alex Cassimiro',
@@ -913,17 +935,17 @@ export const pt: Dict = {
     leadership: {
       title: 'Trilhas de desenvolvimento de liderança | Alex Cassimiro',
       description:
-        'Trilhas de liderança com encontros, prática e acompanhamento. Veja a diferença entre palestra e programa e um exemplo de jornada anual adaptável.',
+        'Trilhas de Liderança: jornadas personalizadas que conectam comportamento humano, relações e visão de negócio, com encontros, prática e acompanhamento entre os módulos.',
     },
     consulting: {
-      title: 'Consultoria em liderança, pessoas e cultura | Alex Cassimiro',
+      title: 'Consultoria estratégica empresarial | Alex Cassimiro',
       description:
-        'Consultoria em desenvolvimento de lideranças, pessoas e cultura: diagnóstico, desenho da solução, implementação e acompanhamento.',
+        'Consultoria estratégica para aprimorar a gestão, otimizar processos e fortalecer o desenvolvimento organizacional, conduzida por Sergio Del Corso em parceria com Alex Cassimiro.',
     },
     about: {
-      title: 'Sobre Alex Cassimiro · Biografia do palestrante',
+      title: 'Sobre Alex Cassimiro · Educador, palestrante e comunicador',
       description:
-        'Biografia de Alex Cassimiro: mais de 17 anos em desenvolvimento de pessoas e lideranças, palestras em português e inglês e título de Cidadão Indaiatubano (2018).',
+        'Alex Cassimiro é educador, palestrante e comunicador. Há mais de 17 anos traduz conhecimento científico sobre emoções, aprendizagem e comportamento em experiências para empresas. Cidadão Indaiatubano (2018).',
     },
     contact: {
       title: 'Solicitar proposta de palestra | Alex Cassimiro',

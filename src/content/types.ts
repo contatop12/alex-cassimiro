@@ -200,6 +200,8 @@ export interface Dict {
     talks: {
       h1: string;
       intro: string;
+      /** Linha do hero: idiomas em que as experiências podem ser realizadas */
+      langsNote: string;
       themesTitle: string;
       leadership: Item;
       personalizationTitle: string;
@@ -247,6 +249,8 @@ export interface Dict {
     leadership: {
       h1: string;
       intro: string;
+      /** Apresentação logo após o hero (primeiro parágrafo em destaque) */
+      presentation: string[];
       compareTitle: string;
       compareHead: { aspect: string; talk: string; program: string };
       compare: { aspect: string; talk: string; program: string }[];
@@ -266,12 +270,17 @@ export interface Dict {
     consulting: {
       h1: string;
       intro: string;
-      whenTitle: string;
-      when: string[];
-      processTitle: string;
-      process: Item[];
-      scopeTitle: string;
-      scope: string[];
+      presentationTitle: string;
+      presentation: string[];
+      focusTitle: string;
+      focus: string[];
+      /** Consultor parceiro que conduz os projetos */
+      partner: {
+        role: string;
+        name: string;
+        highlight: string;
+        bio: string[];
+      };
       faqTitle: string;
       faq: Faq[];
       final: { title: string; text: string };
@@ -282,6 +291,8 @@ export interface Dict {
       bio: string[];
       honor: string;
       honorSource: string;
+      /** Prêmio/título em 3ª pessoa para dados estruturados (JSON-LD) */
+      award: string;
       factsTitle: string;
       facts: { label: string; value: string }[];
       approachTitle: string;

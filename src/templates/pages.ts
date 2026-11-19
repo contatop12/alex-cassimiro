@@ -9,6 +9,7 @@ import {
   faqList,
   figure,
   finalCta,
+  imgUrl,
   itemGrid,
   picture,
   sectionHead,
@@ -75,12 +76,21 @@ function pageHero(
   page: PageId,
   h1: string,
   intro: string,
-  opts: { image?: ImageKey; actions?: string; langs?: boolean; tall?: boolean } = {},
+  opts: {
+    image?: ImageKey;
+    actions?: string;
+    /** false oculta a linha de idiomas; string substitui o texto padrão */
+    langs?: boolean | string;
+    /** HTML extra ao lado da linha de idiomas (ex.: link) */
+    langsExtra?: string;
+    tall?: boolean;
+  } = {},
 ): string {
+  const langsText = typeof opts.langs === 'string' ? opts.langs : ctx.t.talkLanguagesLine;
   const media = opts.image
     ? `<div class="phero-media${opts.tall ? ' phero-media--tall' : ''}" data-curtain>${picture(ctx, opts.image, { sizes: opts.tall ? HERO_SIZES : PHERO_SIZES, eager: true })}</div>`
     : '';
-  return `<section class="phero${opts.image ? '' : ' phero--plain'}" aria-labelledby="ph-title"><div class="wrap phero-grid"><div class="phero-copy">${breadcrumb(ctx, trail(ctx, page))}<h1 id="ph-title" class="display display--page" data-split>${splitWords(h1)}</h1><p class="lede lede--lg" data-rise>${e(intro)}</p>${opts.actions ? `<div class="btn-row" data-rise>${opts.actions}</div>` : ''}${opts.langs === false ? '' : `<p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(ctx.t.talkLanguagesLine)}</span></p>`}</div>${media}</div></section>`;
+  return `<section class="phero${opts.image ? '' : ' phero--plain'}" aria-labelledby="ph-title"><div class="wrap phero-grid"><div class="phero-copy">${breadcrumb(ctx, trail(ctx, page))}<h1 id="ph-title" class="display display--page" data-split>${splitWords(h1)}</h1><p class="lede lede--lg" data-rise>${e(intro)}</p>${opts.actions ? `<div class="btn-row" data-rise>${opts.actions}</div>` : ''}${opts.langs === false ? '' : `<p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(langsText)}</span>${opts.langsExtra ?? ''}</p>`}</div>${media}</div></section>`;
 }
 
 function preloadFor(key: ImageKey, sizes: string) {
@@ -184,7 +194,12 @@ export function talks(ctx: Ctx): PageOutput {
   const formats = `<section class="sec sec-tight" aria-labelledby="fmt-title"><div class="wrap split">${sectionHead('fmt-title', p.formatsTitle)}${itemGrid(p.formats, 'grid-items grid-2')}</div></section>`;
   const gallery = `<section class="sec sec-tight" aria-label="${e(t.cases.english.label)}"><div class="wrap gallery-3">${figure(ctx, 'talkMic', { sizes: '(min-width: 961px) 440px, 100vw' })}${figure(ctx, 'talkRoom', { sizes: '(min-width: 961px) 440px, 100vw' })}${figure(ctx, 'valinhosGroup', { sizes: '(min-width: 961px) 440px, 100vw' })}</div></section>`;
   const body =
-    pageHero(ctx, 'talks', p.h1, p.intro, { image: 'talkWalk', actions }) +
+    pageHero(ctx, 'talks', p.h1, p.intro, {
+      image: 'talkWalk',
+      actions,
+      langs: p.langsNote,
+      langsExtra: textLink(path('english', ctx.lang), t.cta.seeEnglish),
+    }) +
     themes +
     leadership +
     personal +
@@ -301,6 +316,8 @@ export function leadership(ctx: Ctx): PageOutput {
         `<tr><th scope="row">${e(r.aspect)}</th><td data-label="${e(p.compareHead.talk)}">${e(r.talk)}</td><td class="is-hl" data-label="${e(p.compareHead.program)}">${e(r.program)}</td></tr>`,
     )
     .join('')}</tbody></table></div></div></section>`;
+  const [presLead, ...presRest] = p.presentation;
+  const presentation = `<section class="sec sec-tight"><div class="wrap intro-grid"><p class="intro-lead" data-reveal>${e(presLead ?? '')}</p><div class="intro-rest" data-reveal>${presRest.map((x) => `<p class="lede">${e(x)}</p>`).join('')}</div></div></section>`;
   const pillars = `<section class="sec band" aria-labelledby="pil-title"><div class="wrap">${sectionHead('pil-title', p.pillarsTitle)}${itemGrid(p.pillars, 'grid-items grid-4 grid-on-dark')}</div></section>`;
   const journey = `<section class="sec" aria-labelledby="jr-title"><div class="wrap">${sectionHead('jr-title', p.journeyTitle, p.journeyIntro)}<ol class="journey" data-steps>${p.journey
     .map(
@@ -311,6 +328,7 @@ export function leadership(ctx: Ctx): PageOutput {
   const formats = `<section class="sec sec-tight" aria-labelledby="fmt-title"><div class="wrap split">${sectionHead('fmt-title', p.formatsTitle, p.scopeNote)}${itemGrid(p.formats, 'grid-items grid-3')}</div></section>`;
   const body =
     pageHero(ctx, 'leadership', p.h1, p.intro, { image: 'talkRoom', actions, langs: false }) +
+    presentation +
     compare +
     pillars +
     journey +
@@ -341,14 +359,13 @@ export function consulting(ctx: Ctx): PageOutput {
   const actions =
     btnProposal(ctx, 'page-hero', { topic: 'consulting' }) +
     btnWhatsapp(ctx, 'page-hero', { topicLabel: t.nav.consulting, topic: 'consulting' });
-  const when = `<section class="sec" aria-labelledby="when-title"><div class="wrap split">${sectionHead('when-title', p.whenTitle)}<ul class="ticks ticks--lg" role="list" data-reveal>${p.when.map((w) => `<li>${icons.check(18)}<span>${e(w)}</span></li>`).join('')}</ul></div></section>`;
-  const process = `<section class="sec band" aria-labelledby="proc-title"><div class="wrap">${sectionHead('proc-title', p.processTitle)}${steps(p.process, 'steps steps--5 steps--dark')}</div></section>`;
-  const scope = `<section class="sec" aria-labelledby="scope-title"><div class="wrap split">${sectionHead('scope-title', p.scopeTitle)}<ul class="ticks ticks--lg" role="list" data-reveal>${p.scope.map((w) => `<li>${icons.check(18)}<span>${e(w)}</span></li>`).join('')}</ul></div></section>`;
+  const pa = p.partner;
+  const presentation = `<section class="sec" aria-labelledby="pres-title"><div class="wrap split">${sectionHead('pres-title', p.presentationTitle)}<div class="pres-body" data-reveal>${p.presentation.map((x) => `<p class="lede">${e(x)}</p>`).join('')}<h3 class="h3">${e(p.focusTitle)}</h3><ul class="ticks ticks--lg" role="list">${p.focus.map((w) => `<li>${icons.check(18)}<span>${e(w)}</span></li>`).join('')}</ul></div></div></section>`;
+  const partner = `<section class="sec band partner" aria-labelledby="partner-title"><div class="wrap partner-grid"><div class="partner-media" data-reveal>${picture(ctx, 'sergioPortrait', { sizes: '(min-width: 961px) 400px, (min-width: 600px) 60vw, 90vw' })}</div><div class="partner-copy" data-reveal><p class="partner-role">${e(pa.role)}</p><h2 id="partner-title" class="h2">${e(pa.name)}</h2><p class="partner-hl">${e(pa.highlight)}</p>${pa.bio.map((x) => `<p>${e(x)}</p>`).join('')}</div></div></section>`;
   const body =
     pageHero(ctx, 'consulting', p.h1, p.intro, { image: 'valinhosPortrait', actions, langs: false }) +
-    when +
-    process +
-    scope +
+    presentation +
+    partner +
     faqSection(ctx, 'faq-title', p.faqTitle, p.faq) +
     finalCta(ctx, p.final.title, p.final.text, { topic: 'consulting', topicLabel: t.nav.consulting });
   return {
@@ -362,7 +379,13 @@ export function consulting(ctx: Ctx): PageOutput {
       description: t.meta.consulting.description,
       breadcrumb: ldBreadcrumb(ctx, 'consulting'),
       faq: p.faq,
-      service: { name: p.h1, description: p.intro },
+      service: { name: p.presentationTitle, description: p.intro },
+      partner: {
+        name: pa.name,
+        jobTitle: pa.role,
+        description: pa.bio.join(' '),
+        image: abs(imgUrl('sergioPortrait')),
+      },
     }),
   };
 }
@@ -373,7 +396,8 @@ export function about(ctx: Ctx): PageOutput {
   const t = ctx.t;
   const p = t.pages.about;
   const actions = btnProposal(ctx, 'page-hero') + btnWhatsapp(ctx, 'page-hero');
-  const bio = `<section class="sec bio" aria-labelledby="bio-title"><div class="wrap bio-grid"><div class="bio-text" data-reveal><h2 id="bio-title" class="sr-only">${e(t.nav.about)}</h2>${p.bio.map((para) => `<p>${e(para)}</p>`).join('')}<p>${e(p.honor)} <a class="src-link" href="${facts.honor.sourceUrl}" target="_blank" rel="noopener">${e(p.honorSource)}${icons.external(14)}</a></p></div><aside class="bio-aside" data-reveal><h2 class="h3">${e(p.factsTitle)}</h2><dl class="facts">${p.facts.map((f) => `<div><dt>${e(f.value)}</dt><dd>${e(f.label)}</dd></div>`).join('')}</dl><p class="stats-src">${e(fill(t.stats.source, { year: String(facts.referenceYear) }))}</p></aside></div></section>`;
+  const honor = `<p>${e(p.honor)} <a class="src-link" href="${facts.honor.sourceUrl}" target="_blank" rel="noopener">${e(p.honorSource)}${icons.external(14)}</a></p>`;
+  const bio = `<section class="sec bio" aria-labelledby="bio-title"><div class="wrap bio-grid"><div class="bio-text" data-reveal><h2 id="bio-title" class="sr-only">${e(t.nav.about)}</h2>${p.bio.map((para, i) => `<p>${e(para)}</p>${i === 0 ? honor : ''}`).join('')}</div><aside class="bio-aside" data-reveal><h2 class="h3">${e(p.factsTitle)}</h2><dl class="facts">${p.facts.map((f) => `<div><dt>${e(f.value)}</dt><dd>${e(f.label)}</dd></div>`).join('')}</dl><p class="stats-src">${e(fill(t.stats.source, { year: String(facts.referenceYear) }))}</p></aside></div></section>`;
   const quote = `<section class="sec quote-sec" aria-label="${e(p.quoteSource)}"><div class="wrap quote-grid"><div class="quote-media" data-parallax>${picture(ctx, 'podium', { sizes: '(min-width: 961px) 460px, 90vw' })}</div><figure class="quote-fig" data-reveal><blockquote><p>${e(p.quote)}</p></blockquote></figure></div></section>`;
   const approach = `<section class="sec" aria-labelledby="appr-title"><div class="wrap">${sectionHead('appr-title', p.approachTitle)}${itemGrid(p.approach, 'grid-items grid-3 grid-lined')}<p class="center-link">${textLink(path('talks', ctx.lang), t.cta.seeTalks)}</p></div></section>`;
   const body =

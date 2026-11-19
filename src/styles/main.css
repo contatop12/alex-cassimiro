@@ -517,7 +517,7 @@ main:focus {
  * (espanhol tem rótulos mais longos) e usa em para acompanhar fonte ampliada.
  * Rede de segurança: o JS aplica .nav-tight se ainda assim transbordar.
  */
-@media (max-width: 72em) {
+@media (max-width: 64em) {
   .nav {
     display: none;
   }
@@ -528,18 +528,7 @@ main:focus {
     display: grid;
   }
 }
-@media (max-width: 75em) {
-  :root:lang(pt) .nav {
-    display: none;
-  }
-  :root:lang(pt) .header-act {
-    margin-left: auto;
-  }
-  :root:lang(pt) .menu-btn {
-    display: grid;
-  }
-}
-@media (max-width: 81.5em) {
+@media (max-width: 70em) {
   :root:lang(es) .nav {
     display: none;
   }
@@ -735,6 +724,13 @@ body.menu-open {
   inset: 22px -22px -22px 22px;
   background: var(--ink);
   border-radius: var(--radius);
+}
+/* No celular o deslocamento cabe na margem lateral (gutter mínimo de 16px) */
+@media (max-width: 760px) {
+  .hero-media::before,
+  .phero-media::before {
+    inset: 14px -12px -12px 14px;
+  }
 }
 .hero-media .pic img,
 .phero-media .pic img {
@@ -1678,6 +1674,80 @@ details[open]::details-content {
   font-size: clamp(1.6rem, 1.2rem + 1.7vw, 2.6rem);
   line-height: 1.25;
   color: var(--white);
+}
+
+/* ---------- Apresentações (trilhas e consultoria) ---------- */
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 1rem + 3vw, 4.5rem);
+  align-items: start;
+}
+.intro-lead {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.45rem, 1.15rem + 1.25vw, 2.2rem);
+  line-height: 1.25;
+  color: var(--ink);
+  border-left: 2px solid var(--blue);
+  padding-left: clamp(1rem, 0.5rem + 1.5vw, 1.75rem);
+}
+.intro-rest {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.35rem;
+}
+.pres-body {
+  display: grid;
+  gap: 1.1rem;
+}
+.pres-body .h3 {
+  margin-top: 0.75rem;
+}
+
+/* ---------- Consultor parceiro ---------- */
+.partner-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  gap: clamp(2rem, 1rem + 5vw, 6rem);
+  align-items: center;
+}
+.partner-media .pic img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: var(--radius);
+}
+.partner-copy {
+  display: grid;
+  gap: 1rem;
+  max-width: 62ch;
+}
+.band .partner-role {
+  color: var(--sky);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.band .partner-hl {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.05rem + 0.75vw, 1.65rem);
+  line-height: 1.3;
+  color: var(--white);
+  border-left: 2px solid var(--sky);
+  padding-left: 1.1rem;
+}
+@media (max-width: 960px) {
+  .intro-grid,
+  .partner-grid {
+    grid-template-columns: 1fr;
+  }
+  .partner-media {
+    max-width: 420px;
+  }
 }
 
 /* ---------- Inteligência emocional ---------- */

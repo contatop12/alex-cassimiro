@@ -188,5 +188,16 @@
       1254
     ],
     "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQABAAA4BaJYwCdADdKesHzLcAAP75F8Dmc966hk6r1VV5qLaaI6h7e69f7wjdhDEMEIGGCD6AAA=="
+  },
+  "sergioPortrait": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      360,
+      540,
+      720,
+      1000
+    ],
+    "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQABAAA4BaJQBOj+ABxwEQoAD+88FjxaQJBHwPV/QhhL9BVB5B5FEEfiOUnSp5RYC53XgUte/bo9rKPe9o7CR6NNd3AOCAAAA="
   }
 }

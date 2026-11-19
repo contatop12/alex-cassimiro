@@ -15,6 +15,7 @@ Versões otimizadas em `public/img/` (AVIF + WebP responsivos), geradas por `npm
 | `talkWalk`, `talkRoom`, `talkEnergy`, `talkQuestion`, `talkListening`, `talkMic` | Palestras/…kuraray… (6 fotos) | Mesma palestra em inglês, São Paulo | Abertura da home, mosaicos, página de palestras | Publicadas sem nome da empresa |
 | `valinhosGroup` | Palestras/palestra-alex-cassimiro-inteligencia-emocional-para-voilier-em-valinho.jpeg | Foto de grupo, Valinhos | Experiências, IE, palestras | Publicada sem nome da empresa, composição horizontal preservada |
 | `valinhosPortrait` | Retratos/Perfil Palestra Voilier.jpeg | Retrato no dia da palestra em Valinhos | Hero da consultoria | Publicada sem nome da empresa |
+| `sergioPortrait` | Drive: Sergio.jpeg (enviado com o documento "Atualizações Site", 19/11/2026) | Retrato do consultor parceiro Sergio Del Corso, fundo claro | Página de consultoria (apresentação do consultor) e JSON-LD | Aprovado pelo cliente |
 
 ## Documentos internos (não publicados)
 
@@ -23,6 +24,7 @@ Versões otimizadas em `public/img/` (AVIF + WebP responsivos), geradas por `npm
 | Media Kit Alex Cassimiro.pdf (2026) | Fonte de temas, trilha, processo, números (+17 anos, +1.000 líderes). **Não publicado**: contém credencial TEDx não verificada e condição comercial datada |
 | Curriculo Alex.png | Conferência da biografia (formação, Waldorf Aracê, SESI). Não publicado |
 | Ata da 1ª Sessão Solene de 07/12/2018 (Câmara de Indaiatuba), p. 2 | Fonte pública do título de Cidadão Indaiatubano — vinculada na página Sobre |
+| Alex Cassimiro - Atualizações Site (PDF, 19/11/2026) | Textos aprovados de Home, Palestras, Trilhas, Consultoria (com Sergio Del Corso) e Sobre; troca de Ludopatia por Saúde financeira e comportamento; página em inglês fora do menu. Aplicado nos 3 idiomas |
 
 ## Pendências de ativos
 

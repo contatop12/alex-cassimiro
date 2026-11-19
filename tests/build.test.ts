@@ -102,6 +102,32 @@ describe.skipIf(!built)('HTML gerado', () => {
     }
   });
 
+  it('atualizações de conteúdo (nov/2026) aparecem nos três idiomas', () => {
+    const text = (html: string) => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ');
+    expect(text(read('/'))).toContain(
+      'Compreender o comportamento humano é compreender os desafios do nosso tempo.',
+    );
+    for (const lang of langs) {
+      // Menu principal sem aba separada de palestras em inglês (a página segue acessível por links)
+      const header = read(routes.home[lang]).match(/<nav class="nav"[\s\S]*?<\/nav>/)?.[0] ?? '';
+      expect(header).not.toContain(`href="${routes.english[lang]}"`);
+      expect(header).toContain(`href="${routes.talks[lang]}"`);
+      // Ludopatia substituída por saúde financeira
+      const talks = read(routes.talks[lang]);
+      expect(talks).toContain('id="th-');
+      expect(talks).not.toMatch(/ludopat/i);
+      expect(talks).toContain(`href="${routes.english[lang]}"`);
+      // Consultoria com o consultor parceiro e foto
+      const consulting = read(routes.consulting[lang]);
+      expect(consulting).toContain('Sergio Del Corso');
+      expect(consulting).toContain('/img/sergioPortrait-');
+    }
+    expect(read('/palestras/')).toContain('Saúde financeira e comportamento');
+    expect(text(read('/sobre/'))).toContain(
+      'Conhecimento sobre o comportamento humano, conectado à vida real.',
+    );
+  });
+
   it('rodapé traz o crédito da P12 Digital em cada idioma', () => {
     expect(read('/')).toContain('Desenvolvido por <a href="https://p12digital.com.br/"');
     expect(read('/en/')).toContain('Developed by <a href="https://p12digital.com.br/"');

@@ -263,15 +263,15 @@ const en = dicts.en;
 const es = dicts.es;
 const llms = `# Alex Cassimiro
 
-> ${pt.role}. Palestras corporativas sobre inteligência emocional e liderança, em português e inglês, para líderes e equipes de empresas. Também oferece trilhas de desenvolvimento de liderança e consultoria em pessoas, liderança e cultura. Site oficial: ${site.url}
+> ${pt.role}. Palestras e experiências sobre comportamento humano, emoções e escolhas no trabalho, em português e inglês, para líderes e equipes de empresas. Também oferece trilhas de liderança e consultoria estratégica empresarial em parceria com o consultor Sergio Del Corso. Site oficial: ${site.url}
 
 ## Respostas rápidas
 
-- Quem é: Alex Cassimiro, palestrante corporativo e consultor em desenvolvimento de lideranças, pessoas e cultura, com mais de ${facts.yearsExperience} anos de experiência e mais de ${facts.leadersTrained.toLocaleString('pt-BR')} líderes treinados (fonte: ${facts.source} ${facts.referenceYear}).
-- O que oferece: palestras corporativas (inteligência emocional, ética e integridade, saúde mental, álcool e outras drogas, cultura do cuidado ativo e impactos das apostas), trilhas de liderança e consultoria.
+- Quem é: Alex Cassimiro, educador, palestrante e comunicador, com formação em Administração e Neuropsicopedagogia, mais de ${facts.yearsExperience} anos de experiência e mais de ${facts.leadersTrained.toLocaleString('pt-BR')} líderes treinados (fonte: ${facts.source} ${facts.referenceYear}).
+- O que oferece: palestras corporativas (${pt.themes.map((th) => `${th.title}: ${th.subtitle.toLowerCase()}`).join('; ')}), trilhas de liderança personalizadas e consultoria estratégica empresarial conduzida por Sergio Del Corso (mais de 30 anos em gestão empresarial e desenvolvimento organizacional no Brasil e na Europa).
 - Para quem: RH, T&D, People & Culture, comunicação interna, lideranças e organizadores de eventos corporativos.
 - Idiomas das palestras: português e inglês. O site está em português, inglês e espanhol; as palestras não são conduzidas em espanhol.
-- Evidências: palestra de inteligência emocional conduzida em inglês em São Paulo (SP) e palestra de inteligência emocional em Valinhos (SP). ${pt.pages.about.honor} Fonte oficial: ${facts.honor.sourceUrl}
+- Evidências: palestra de inteligência emocional conduzida em inglês em São Paulo (SP) e palestra de inteligência emocional em Valinhos (SP). ${pt.pages.about.award}. Fonte oficial: ${facts.honor.sourceUrl}
 - Como contratar: enviar o briefing pelo formulário (${abs(path('contact', 'pt'))}), WhatsApp (${contact.whatsappDisplay}) ou e-mail (${contact.email}). Alex alinha objetivo, público, idioma e formato e envia uma proposta conforme o escopo. Não há preços públicos.
 
 ## Páginas (português)
@@ -348,6 +348,8 @@ ${P.english.topicsText}
 URL: ${abs(path('leadership', lang))}
 ${P.leadership.intro}
 
+${P.leadership.presentation.join('\n\n')}
+
 ${P.leadership.compare.map((r) => `- ${r.aspect}: ${P.leadership.compareHead.talk} — ${r.talk}; ${P.leadership.compareHead.program} — ${r.program}`).join('\n')}
 
 ${P.leadership.journeyIntro}
@@ -357,7 +359,9 @@ ${P.leadership.journey.map((m, i) => `${i + 1}. ${m.title}: ${m.text}`).join('\n
 URL: ${abs(path('consulting', lang))}
 ${P.consulting.intro}
 
-${items(P.consulting.process)}
+${P.consulting.presentation.join('\n\n')}
+
+${P.consulting.partner.name} (${P.consulting.partner.role}): ${P.consulting.partner.bio.join(' ')}
 
 ## ${P.about.h1}
 URL: ${abs(path('about', lang))}

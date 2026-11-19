@@ -9,7 +9,7 @@ export const topicIds = [
   'mental-health',
   'alcohol-drugs',
   'active-care',
-  'gambling',
+  'financial-health',
   'leadership-program',
   'consulting',
   'other',

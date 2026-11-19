@@ -4,7 +4,7 @@ export const en: Dict = {
   langName: 'English',
   skipLink: 'Skip to content',
   identity: 'Alex Cassimiro · Corporate speaker',
-  role: 'Corporate speaker and consultant in leadership, people and culture development',
+  role: 'Educator, speaker and communicator',
   nav: {
     label: 'Main navigation',
     talks: 'Talks',
@@ -149,19 +149,22 @@ export const en: Dict = {
       ],
     },
     {
-      id: 'gambling',
-      anchor: 'impacts-of-gambling',
-      title: 'Gambling addiction',
-      subtitle: 'Illness caused by betting',
-      summary: 'The impacts of betting on behavior, productivity and relationships, and how to prevent them.',
-      forWhom: 'Teams and leaders in companies attentive to the growth of online betting.',
-      whenToHire: 'Health initiatives, financial education, SIPAT or prevention campaigns.',
+      id: 'financial-health',
+      anchor: 'financial-health-and-behavior',
+      title: 'Financial health and behavior',
+      subtitle: 'Emotions, choices and our relationship with money',
+      summary:
+        'How emotions, habits and decisions shape our relationship with money, and what that has to do with mental health, relationships and work.',
+      forWhom: 'Teams and leaders at companies that want to care for people’s well-being as a whole.',
+      whenToHire:
+        'Health and well-being weeks, occupational safety weeks, financial education initiatives or employee care campaigns.',
       covers: [
-        'How betting affects behavior and relationships',
-        'Warning signs in the workplace',
-        'Paths for prevention and for seeking help',
+        'How emotions and habits influence financial decisions',
+        'The links between debt, stress and mental health',
+        'Impulse spending, gambling and other warning signs',
+        'More conscious choices at work and beyond',
       ],
-      note: 'Educational and preventive approach, with no clinical character.',
+      note: 'Educational, awareness-raising approach, not clinical. It does not replace psychological or medical care or specialized financial guidance.',
     },
   ],
   solutions: [
@@ -187,10 +190,11 @@ export const en: Dict = {
       id: 'consulting',
       page: 'consulting',
       name: 'Consulting',
-      what: 'Diagnosis and design of people, leadership and culture solutions.',
-      indicated: 'The challenge involves several departments or it is not yet clear which format fits.',
-      format: 'A tailored project, with stages defined in the scope.',
-      depth: 'Diagnosis, design, implementation support and follow-up.',
+      what: 'Strategic consulting in management, processes and organizational development, with consultant Sergio Del Corso.',
+      indicated:
+        'The company wants to improve management, review processes or find solutions to strategic challenges.',
+      format: 'A tailored project, structured after a conversation about the company’s context.',
+      depth: 'Context analysis, identification of opportunities and a proposed course of action.',
     },
   ],
   hireSteps: [
@@ -273,6 +277,7 @@ export const en: Dict = {
       alt: 'Alex Cassimiro seated and smiling in a room with plants',
       caption: 'Alex Cassimiro on the day of the talk in Valinhos, SP',
     },
+    sergioPortrait: { alt: 'Sergio Del Corso, strategy consultant, smiling, wearing a navy suit and tie' },
   },
   footer: {
     tagline:
@@ -327,9 +332,9 @@ export const en: Dict = {
       'mental-health': 'Mental health at work',
       'alcohol-drugs': 'Alcohol and other drugs',
       'active-care': 'Culture of active care',
-      gambling: 'Impacts of gambling',
+      'financial-health': 'Financial health and behavior',
       'leadership-program': 'Leadership program',
-      consulting: 'Consulting',
+      consulting: 'Strategic consulting',
       other: 'Other or not sure yet',
     },
     formatOptions: {
@@ -380,9 +385,9 @@ export const en: Dict = {
   },
   pages: {
     home: {
-      h1: 'Corporate talks on emotional intelligence and leadership',
+      h1: 'Understanding human behavior is understanding the challenges of our time.',
       support:
-        'For leaders and teams looking to navigate pressure, handle difficult conversations and work better together. Talks available in English and Portuguese.',
+        'Alex Cassimiro translates scientific knowledge into talks and experiences that connect emotions, choices and behavior to the real challenges of life and work.',
       portraitAlt: 'Alex Cassimiro smiling, wearing a navy blue T-shirt, in front of a red wall',
       english: {
         title: 'Experience delivering talks in English',
@@ -420,28 +425,28 @@ export const en: Dict = {
       faqTitle: 'Frequently asked questions',
       faq: [
         {
-          q: 'In which languages does Alex give talks?',
-          a: 'In Portuguese and in English. The talk language is agreed with the company in the proposal and does not depend on the language in which you are reading this website.',
+          q: 'What topics does Alex Cassimiro cover in his talks?',
+          a: 'Alex covers topics related to human behavior, emotions and relationships at work, including emotional intelligence, mental health, leadership, organizational culture, ethics and human development. Each experience is built around the organization’s challenges and goals.',
+        },
+        {
+          q: 'Are the talks customized for each company?',
+          a: 'Yes. The content, examples and activities are adapted to the company’s context, the audience profile and the goals of the event. The aim is to connect knowledge with real everyday situations.',
         },
         {
           q: 'Are the talks in person or online?',
-          a: 'Both options are available. The format is agreed in the briefing, according to the event, the audience and the schedule.',
+          a: 'Both formats are available. The format is defined together, based on the goal of the event, the audience and availability.',
         },
         {
-          q: 'Can the talk be customized for my company?',
-          a: 'Yes. Before the proposal, Alex aligns goal, audience, language and format. Examples, activities and emphasis are adapted to the organization’s reality.',
+          q: 'In which languages does Alex give talks?',
+          a: 'In Portuguese and English. The language is chosen according to the company’s needs and the participants’ profile.',
         },
         {
-          q: 'What information do I need to send to receive a proposal?',
-          a: 'The company name and the goal of the event are the starting point. If you have them, include topic, expected date or month, city, format, estimated audience size and language. You can start without a date, topic or audience size defined.',
+          q: 'How long is a talk?',
+          a: 'The length is defined according to the goal and schedule of the event. Experiences can be structured in different formats, from shorter sessions to extended activities with interaction.',
         },
         {
-          q: 'How long is the talk?',
-          a: 'The duration is defined in the briefing, according to the format and the event schedule.',
-        },
-        {
-          q: 'Does Alex work with companies outside São Paulo?',
-          a: 'Alex has delivered talks in São Paulo and in Valinhos (SP). In-person events in other cities and online events are assessed in the proposal, depending on schedule and travel.',
+          q: 'What information do I need to send to request a proposal?',
+          a: 'The company name and the goal of the event are enough to start the conversation. If available, details about the date, city, estimated audience, topic of interest and preferred format also help.',
         },
       ],
       final: {
@@ -450,9 +455,10 @@ export const en: Dict = {
       },
     },
     talks: {
-      h1: 'Corporate talks for leaders and teams',
+      h1: 'Talks on human behavior and the challenges of our time.',
       intro:
-        'Alex Cassimiro is a corporate speaker who gives talks in English and Portuguese on emotional intelligence, ethics, mental health, prevention and a culture of care. Each keynote topic starts from real work situations and is adapted to the audience and the goal of the event.',
+        'Communication experiences that translate scientific knowledge into reflection and learning about emotions, choices, relationships and behavior at work.',
+      langsNote: 'Experiences can be delivered in Portuguese or English.',
       themesTitle: 'Available topics',
       leadership: {
         title: 'Leadership in every topic',
@@ -483,15 +489,19 @@ export const en: Dict = {
       faq: [
         {
           q: 'Is there a talk specifically about leadership?',
-          a: 'Leadership is a thread that runs through every topic. For work focused on developing leaders, the recommendation is a leadership program, designed around the company’s challenges.',
+          a: 'Leadership runs across all the experiences. For companies that want to develop leadership skills on an ongoing basis, there are also development programs, structured around the organization’s challenges.',
         },
         {
-          q: 'Can two topics be combined in the same talk?',
-          a: 'Combinations can be assessed in the briefing, depending on goal, audience and available time.',
+          q: 'Can two or more topics be combined in one talk?',
+          a: 'Yes. Topics can be connected and adapted to the goal of the event, the audience profile and the time available. The aim is to build a coherent experience without overloading the content.',
         },
         {
-          q: 'Are the talks on mental health, alcohol and gambling clinical in nature?',
-          a: 'No. These topics have an educational and preventive approach and do not replace professional health care.',
+          q: 'Are the talks on mental health, financial health and behavior clinical in nature?',
+          a: 'No. They are educational, awareness-raising experiences grounded in scientific knowledge. They do not replace psychological or medical care or specialized financial guidance.',
+        },
+        {
+          q: 'Can the talks be adapted to different audiences and industries?',
+          a: 'Yes. The language, examples and activities are adjusted to the participants’ reality, whether leaders, operational teams, administrative departments or mixed audiences.',
         },
       ],
       final: {
@@ -636,9 +646,13 @@ export const en: Dict = {
       },
     },
     leadership: {
-      h1: 'Leadership development programs',
+      h1: 'Developing leaders means transforming behavior in practice.',
       intro:
-        'Continuous development for leaders, with sessions, practice and follow-up. For companies that need behavior change over time, not just a single event.',
+        'Learning journeys that connect human behavior, relationships and business vision to develop more aware, prepared and responsible leaders.',
+      presentation: [
+        'Organizations face challenges that a one-off training cannot solve. Developing leaders takes continuity, reflection, practice and application in everyday work.',
+        'Leadership Programs are customized journeys that combine knowledge, hands-on experiences and follow-up to turn learning into observable behavior in the workplace.',
+      ],
       compareTitle: 'One-off talk or program?',
       compareHead: { aspect: 'Aspect', talk: 'One-off talk', program: 'Leadership program' },
       compare: [
@@ -688,104 +702,108 @@ export const en: Dict = {
       faqTitle: 'Questions about the programs',
       faq: [
         {
-          q: 'Does the program have to have ten modules?',
-          a: 'No. The annual journey is an example. The number and order of modules are defined with the company.',
+          q: 'Does the program need to have ten modules?',
+          a: 'No. The journey shown is only a reference. The number of sessions, the topics and the duration are defined according to each organization’s challenges, goals and reality.',
         },
         {
-          q: 'Can the program be delivered in English?',
-          a: 'The language is agreed in the proposal. Alex’s talks are delivered in Portuguese and in English.',
+          q: 'How are the program topics defined?',
+          a: 'It starts with understanding the company’s challenges and the leaders’ development needs. From there, the topics, the sequence of modules and the practical activities are defined.',
+        },
+        {
+          q: 'How does follow-up work between sessions?',
+          a: 'Learning continues between modules through applied challenges, reflections, tools and activities tied to the leadership routine. The goal is to help transfer learning to work.',
+        },
+        {
+          q: 'Can the program be delivered in person, online or in a hybrid format?',
+          a: 'Yes. Sessions can take place in person, live online or in a hybrid format. The choice takes into account the company’s structure, where participants are located and the program’s goals.',
         },
       ],
       final: {
-        title: 'Shall we design your leaders’ program?',
-        text: 'Tell us how many leaders would take part and which challenges the company wants to work on.',
+        title: 'Shall we develop your organization’s next leaders?',
+        text: 'Tell us what challenges your company faces and which behaviors you want to develop. From that conversation, we can design a learning journey aligned with the reality of the business.',
       },
     },
     consulting: {
-      h1: 'Leadership, people and culture consulting',
+      h1: 'Strategy and management to turn challenges into results.',
       intro:
-        'For when the challenge is bigger than an event: diagnosis, solution design, implementation support and follow-up, connecting human development to business strategy.',
-      whenTitle: 'When consulting is the right fit',
-      when: [
-        'The challenge involves more than one department or hierarchical level.',
-        'The company wants to understand the cause before choosing a format.',
-        'Talks, programs and other initiatives need to be combined in a single project.',
-        'The culture is changing and leaders need support to sustain the change.',
+        'Strategic consulting solutions for companies seeking to improve their management, optimize processes and strengthen their organizational development.',
+      presentationTitle: 'Strategic business consulting',
+      presentation: [
+        'Through a partnership with consultant Sergio Del Corso, we bring together executive experience and strategic vision to help companies identify opportunities, improve management and develop practical solutions for their businesses.',
+        'The work combines expertise in business management, process analysis and an understanding of organizational challenges, with a focus on consistent results.',
       ],
-      processTitle: 'How it works',
-      process: [
-        {
-          title: 'Connection and briefing',
-          text: 'Understanding the context, challenges and goals of the organization.',
-        },
-        {
-          title: 'Tailored diagnosis',
-          text: 'Mapping people, processes and culture to identify real needs.',
-        },
-        {
-          title: 'Solution design',
-          text: 'A proposal with content, methodology and format aligned with the business.',
-        },
-        {
-          title: 'Implementation',
-          text: 'Delivering activities with interaction, practice and a link to the company’s reality.',
-        },
-        {
-          title: 'Follow-up',
-          text: 'Ongoing support with indicators and feedback to sustain day-to-day application.',
-        },
+      focusTitle: 'Areas of work',
+      focus: [
+        'Better management',
+        'Process optimization',
+        'Organizational development',
+        'Practical, results-focused solutions',
       ],
-      scopeTitle: 'What may be part of the scope',
-      scope: [
-        'Diagnosis and design of tailored solutions',
-        'Culture, leadership and people projects',
-        'Implementation support',
-        'Connecting human development to business strategy',
-      ],
+      partner: {
+        role: 'Strategy consultant',
+        name: 'Sergio Del Corso',
+        highlight:
+          'More than 30 years of experience in business management and organizational development in Brazil and Europe.',
+        bio: [
+          'Sergio Del Corso is a strategy consultant with a degree in Accounting and a specialization in Management. With more than 30 years of experience in Brazil and Europe, he has built a solid executive career in business management and organizational development.',
+          'His work focuses on improving management, optimizing processes and building practical solutions to business challenges, always with a focus on results.',
+        ],
+      },
       faqTitle: 'Questions about consulting',
       faq: [
         {
-          q: 'How does a consulting project start?',
-          a: 'With a briefing conversation about the context and goals. From there, Alex proposes the scope of the diagnosis and the following stages.',
+          q: 'What kind of company can hire the consulting service?',
+          a: 'Companies that want to improve their management, review processes, identify opportunities for improvement and develop solutions to their strategic and organizational challenges.',
         },
         {
-          q: 'Does consulting include talks and programs?',
-          a: 'It can, when that makes sense for the goal. The combination of initiatives is defined in the solution design.',
+          q: 'How does the consulting work?',
+          a: 'It starts with a conversation to understand the company’s context and challenges. Based on that analysis, opportunities are identified and a proposal suited to the business’s needs is structured.',
+        },
+        {
+          q: 'Who leads the consulting projects?',
+          a: 'Projects are led by consultant Sergio Del Corso, a professional with more than 30 years of experience in business management and organizational development, in partnership with Alex Cassimiro.',
+        },
+        {
+          q: 'Does the consulting offer customized solutions?',
+          a: 'Yes. Each project takes into account the company’s reality, goals and specific needs. Solutions are built according to the context of each business.',
         },
       ],
       final: {
-        title: 'Tell us about your company’s challenge',
-        text: 'A first conversation helps clarify whether the path is a talk, a program or consulting.',
+        title: 'Shall we talk about your business challenges?',
+        text: 'Tell us about your company’s context and challenges. From that conversation, we structure a proposal suited to the business.',
       },
     },
     about: {
-      h1: 'About Alex Cassimiro',
-      lead: 'Corporate speaker and consultant in leadership, people and culture development.',
+      h1: 'Knowledge about human behavior, connected to real life.',
+      lead: 'I’m Alex Cassimiro. Educator, speaker and communicator. I translate scientific knowledge into experiences that connect emotions, choices, learning and behavior to the challenges of our time.',
       bio: [
-        'Alex Cassimiro has worked for more than 17 years in people and leadership development, across different industries and organizational contexts. His approach combines content, hands-on experience and applicable methodologies to turn human and organizational challenges into development that matters to the business.',
-        'With a degree in Business Administration with an emphasis on Foreign Trade and a postgraduate degree in Neuropsychopedagogy, Alex brings together knowledge of learning, emotional intelligence and corporate practice. His career includes work at SESI, the founding of Escola Associativa Waldorf Aracê in Indaiatuba, and experience in industry, technology, services, education and the nonprofit sector.',
-        'Today, Alex works with companies on three fronts: corporate talks, in English and Portuguese; leadership development programs; and consulting in people, leadership and culture.',
+        'For more than 17 years, I have worked with human development, learning and behavior in different educational and organizational contexts. My career includes working as a Corporate Instructor at SESI-SP, founding the Waldorf Aracê Associative School in Indaiatuba, and experience with industry, technology, services, education and the nonprofit sector.',
+        'My work grows out of a deep curiosity: understanding how people feel, learn, make decisions and relate to one another in the face of the challenges of contemporary life.',
+        'With a background in Business Administration and Neuropsychopedagogy, I connect knowledge about learning, emotions and behavior to real everyday situations.',
+        'My work is to translate complex concepts into communication experiences that are accessible, sensitive and well grounded, bringing scientific knowledge closer to people’s reality.',
+        'Today, I pay special attention to the relationship between financial health, human behavior and mental health, while continuing to work on leadership development and organizational relationships.',
       ],
       honor:
-        'In 2018, Alex Cassimiro received the honorary title of Citizen of Indaiatuba (Cidadão Indaiatubano) from the Indaiatuba City Council.',
+        'In 2018, I was honored by the Indaiatuba City Council with the honorary title of Citizen of Indaiatuba (Cidadão Indaiatubano).',
       honorSource:
         'Source: minutes of the solemn session of December 7, 2018, page 2 (Indaiatuba City Council)',
+      award: 'Honorary title of Citizen of Indaiatuba (Cidadão Indaiatubano), Indaiatuba City Council (2018)',
       factsTitle: 'By the numbers',
       facts: [
         { value: '17+ years', label: 'of experience in people and leadership development' },
         { value: '1,000+', label: 'leaders trained in leadership programs' },
       ],
-      approachTitle: 'How Alex works',
+      approachTitle: 'How I work',
       approach: [
         { title: 'People at the center', text: 'Human development integrated with business strategy.' },
         { title: 'From knowledge to action', text: 'Interactive experiences tied to everyday work.' },
         { title: 'Genuine customization', text: 'Content adapted to the reality of each organization.' },
       ],
       quote:
-        'I believe in the power of people and of organizations that learn, connect and grow together. I turn knowledge into action and development into real results.',
+        'I believe that educating is not just passing on information. It is creating the conditions for people to better understand their reality, broaden their perspectives and make more conscious choices.',
       quoteSource: 'Alex Cassimiro (translated from Portuguese)',
       final: {
-        title: 'Want to bring Alex to your event?',
+        title: 'Shall we talk about what we can build together?',
         text: 'Send the briefing and receive a proposal according to the scope.',
       },
     },
@@ -878,12 +896,12 @@ export const en: Dict = {
     home: {
       title: 'Corporate speaker for emotional intelligence and leadership',
       description:
-        'Corporate speaker Alex Cassimiro: emotional intelligence and leadership talks in English and Portuguese for leaders and teams. Request a proposal.',
+        'Talks and experiences on human behavior, emotions and choices at work: emotional intelligence, mental health, leadership and culture. In English and Portuguese. Request a proposal.',
     },
     talks: {
-      title: 'Corporate speaker · Keynote topics | Alex Cassimiro',
+      title: 'Corporate talks on human behavior | Alex Cassimiro',
       description:
-        'Corporate talk topics by Alex Cassimiro: emotional intelligence, ethics and integrity, mental health, alcohol and drugs, active care and gambling. In English and Portuguese.',
+        'Talks by Alex Cassimiro on human behavior: emotional intelligence, ethics and integrity, mental health, alcohol and drugs, active care and financial health. In English or Portuguese.',
     },
     ei: {
       title: 'Emotional intelligence talk for companies | Alex Cassimiro',
@@ -898,17 +916,17 @@ export const en: Dict = {
     leadership: {
       title: 'Leadership development programs | Alex Cassimiro',
       description:
-        'Leadership development programs with sessions, practice and follow-up. See how a talk differs from a program, plus an adaptable annual journey.',
+        'Leadership Programs: customized journeys that connect human behavior, relationships and business vision, with sessions, practice and follow-up between modules.',
     },
     consulting: {
-      title: 'Leadership, people and culture consulting | Alex Cassimiro',
+      title: 'Strategic business consulting | Alex Cassimiro',
       description:
-        'Leadership, people and culture consulting: diagnosis, solution design, implementation and follow-up.',
+        'Strategic consulting to improve management, optimize processes and strengthen organizational development, led by Sergio Del Corso in partnership with Alex Cassimiro.',
     },
     about: {
-      title: 'About Alex Cassimiro · Speaker biography',
+      title: 'About Alex Cassimiro · Educator, speaker and communicator',
       description:
-        'Biography of Alex Cassimiro: 17+ years in people and leadership development, talks in English and Portuguese, and Citizen of Indaiatuba title (2018).',
+        'Alex Cassimiro is an educator, speaker and communicator. For more than 17 years he has translated scientific knowledge about emotions, learning and behavior into experiences for companies. Citizen of Indaiatuba (2018).',
     },
     contact: {
       title: 'Request a speaking proposal | Alex Cassimiro',

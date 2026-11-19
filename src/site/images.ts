@@ -75,6 +75,9 @@ export const imageSpecs = {
   // Palestra de inteligência emocional · Valinhos, SP
   valinhosGroup: { source: 'palestras/voilier-grupo.jpeg', widths: [640, 960, 1280, 1600] },
   valinhosPortrait: { source: 'palestras/voilier-perfil.jpeg', widths: [400, 640, 1000, 1254] },
+
+  // Consultoria · parceiro Sergio Del Corso (foto enviada pelo cliente)
+  sergioPortrait: { source: 'consultoria/sergio.jpeg', widths: [360, 540, 720, 1000] },
 } satisfies Record<string, ImageSpec>;
 
 export type ImageKey = keyof typeof imageSpecs;

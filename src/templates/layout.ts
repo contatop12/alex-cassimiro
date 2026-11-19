@@ -47,7 +47,6 @@ function navItems(ctx: Ctx) {
   const n = ctx.t.nav;
   return [
     { id: 'talks' as const, label: n.talks },
-    { id: 'english' as const, label: n.english },
     { id: 'leadership' as const, label: n.leadership },
     { id: 'consulting' as const, label: n.consulting },
     { id: 'about' as const, label: n.about },

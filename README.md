@@ -146,7 +146,8 @@ CI do GitHub (`.github/workflows/ci.yml`) roda typecheck, lint, build e testes e
 - [ ] **Depoimentos**: destaque do Instagram exige login; enviar arquivos com nome, cargo, empresa e autorização.
 - [ ] **TEDx**: identificar a edição ou publicação oficial antes de citar (`publish.tedx`).
 - [ ] **Media kit**: versão aprovada para distribuição (sem TEDx não verificado e sem condição comercial datada "contratações em 2026 → trilha em 2027") → `publish.mediaKit`.
-- [ ] **Biografia**: confirmar formação (Administração/Comércio Exterior, pós em Neuropsicopedagogia), fundação da Escola Waldorf Aracê e cargo/período no SESI (dados do currículo).
+- [x] **Biografia**: atualizada com o texto aprovado por Alex (documento "Atualizações Site", 19/11/2026): formação em Administração e Neuropsicopedagogia, SESI-SP como Instrutor Corporativo, fundação da Escola Waldorf Aracê.
+- [ ] **E-mail corporativo** `contato@alexcassimiro.com.br`: quando a caixa estiver ativa, trocar `contact.email` em `src/site/config.ts` (e `LEAD_TO_EMAIL` no Worker). Hoje o site usa `oalexcassimiro@gmail.com` para não divulgar um endereço que ainda não recebe mensagens.
 - [ ] **Formulário em produção**: domínio verificado no Resend (ou outro provedor) + `LEAD_FROM_EMAIL` + `RESEND_API_KEY`, ou webhook do CRM.
 - [ ] **Privacidade**: revisão jurídica; confirmar operador de e-mail e prazo de retenção.
 - [ ] **Analytics**: criar contêiner GTM/GA4 e definir `PUBLIC_GTM_ID`.

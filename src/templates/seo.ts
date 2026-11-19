@@ -47,7 +47,7 @@ function person(ctx: Ctx, full: boolean): Record<string, unknown> {
     knowsAbout: ctx.t.themes.map((t) => t.title).concat([ctx.t.nav.leadership, ctx.t.nav.consulting]),
   };
   if (full) {
-    p.award = ctx.t.pages.about.honor;
+    p.award = ctx.t.pages.about.award;
   }
   return p;
 }
@@ -62,6 +62,8 @@ export interface LdOpts {
   type?: 'WebPage' | 'AboutPage' | 'ContactPage' | 'ProfilePage' | 'CollectionPage';
   image?: string;
   video?: { name: string; description: string; contentUrl: string; thumbnailUrl: string; duration: string };
+  /** Profissional parceiro que conduz o serviço junto com Alex */
+  partner?: { name: string; jobTitle: string; description: string; image: string };
 }
 
 export function jsonLd(ctx: Ctx, o: LdOpts): string {
@@ -125,13 +127,24 @@ export function jsonLd(ctx: Ctx, o: LdOpts): string {
       publisher: { '@id': personId },
     });
   }
+  const partnerId = o.partner ? `${url}#partner` : null;
+  if (o.partner) {
+    graph.push({
+      '@type': 'Person',
+      '@id': partnerId,
+      name: o.partner.name,
+      jobTitle: o.partner.jobTitle,
+      description: o.partner.description,
+      image: o.partner.image,
+    });
+  }
   if (o.service) {
     graph.push({
       '@type': 'Service',
       '@id': `${url}#service`,
       name: o.service.name,
       description: o.service.description,
-      provider: { '@id': personId },
+      provider: partnerId ? [{ '@id': personId }, { '@id': partnerId }] : { '@id': personId },
       url,
       inLanguage: htmlLang[ctx.lang],
       ...(o.service.languages ? { availableLanguage: o.service.languages } : {}),
