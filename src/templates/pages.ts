@@ -90,7 +90,7 @@ function pageHero(
   const media = opts.image
     ? `<div class="phero-media${opts.tall ? ' phero-media--tall' : ''}" data-curtain>${picture(ctx, opts.image, { sizes: opts.tall ? HERO_SIZES : PHERO_SIZES, eager: true })}</div>`
     : '';
-  return `<section class="phero${opts.image ? '' : ' phero--plain'}" aria-labelledby="ph-title"><div class="wrap phero-grid"><div class="phero-copy">${breadcrumb(ctx, trail(ctx, page))}<h1 id="ph-title" class="display display--page" data-split>${splitWords(h1)}</h1><p class="lede lede--lg" data-rise>${e(intro)}</p>${opts.actions ? `<div class="btn-row" data-rise>${opts.actions}</div>` : ''}${opts.langs === false ? '' : `<p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(langsText)}</span>${opts.langsExtra ?? ''}</p>`}</div>${media}</div></section>`;
+  return `<section class="phero${opts.image ? '' : ' phero--plain'}" aria-labelledby="ph-title"><div class="wrap${opts.image ? ' phero-grid' : ''}"><div class="phero-copy">${breadcrumb(ctx, trail(ctx, page))}<h1 id="ph-title" class="display display--page" data-split>${splitWords(h1)}</h1><p class="lede lede--lg" data-rise>${e(intro)}</p>${opts.actions ? `<div class="btn-row" data-rise>${opts.actions}</div>` : ''}${opts.langs === false ? '' : `<p class="talk-langs" data-rise>${icons.mic(18)}<span>${e(langsText)}</span>${opts.langsExtra ?? ''}</p>`}</div>${media}</div></section>`;
 }
 
 function preloadFor(key: ImageKey, sizes: string) {
@@ -363,7 +363,8 @@ export function consulting(ctx: Ctx): PageOutput {
   const presentation = `<section class="sec" aria-labelledby="pres-title"><div class="wrap split">${sectionHead('pres-title', p.presentationTitle)}<div class="pres-body" data-reveal>${p.presentation.map((x) => `<p class="lede">${e(x)}</p>`).join('')}<h3 class="h3">${e(p.focusTitle)}</h3><ul class="ticks ticks--lg" role="list">${p.focus.map((w) => `<li>${icons.check(18)}<span>${e(w)}</span></li>`).join('')}</ul></div></div></section>`;
   const partner = `<section class="sec band partner" aria-labelledby="partner-title"><div class="wrap partner-grid"><div class="partner-media" data-reveal>${picture(ctx, 'sergioPortrait', { sizes: '(min-width: 961px) 400px, (min-width: 600px) 60vw, 90vw' })}</div><div class="partner-copy" data-reveal><p class="partner-role">${e(pa.role)}</p><h2 id="partner-title" class="h2">${e(pa.name)}</h2><p class="partner-hl">${e(pa.highlight)}</p>${pa.bio.map((x) => `<p>${e(x)}</p>`).join('')}</div></div></section>`;
   const body =
-    pageHero(ctx, 'consulting', p.h1, p.intro, { image: 'valinhosPortrait', actions, langs: false }) +
+    // Sem retrato de Alex: a consultoria é conduzida por Sergio (Alex faz a ponte)
+    pageHero(ctx, 'consulting', p.h1, p.intro, { actions, langs: false }) +
     presentation +
     partner +
     faqSection(ctx, 'faq-title', p.faqTitle, p.faq) +
@@ -372,7 +373,6 @@ export function consulting(ctx: Ctx): PageOutput {
     title: t.meta.consulting.title,
     description: t.meta.consulting.description,
     body,
-    preloadImage: preloadFor('valinhosPortrait', PHERO_SIZES),
     jsonLd: jsonLd(ctx, {
       page: 'consulting',
       title: t.meta.consulting.title,

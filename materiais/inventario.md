@@ -14,7 +14,7 @@ Versões otimizadas em `public/img/` (AVIF + WebP responsivos), geradas por `npm
 | `talkEnglish` | Palestras/palestra-alex-cassimiro-em-ingles-…-kuraray (slide "Now you already know…") | Palestra em inglês, São Paulo | Hero da página de palestras em inglês, registros da página de IE | Publicada sem nome da empresa. Texto do slide não é usado como afirmação |
 | `talkWalk`, `talkRoom`, `talkEnergy`, `talkQuestion`, `talkListening`, `talkMic` | Palestras/…kuraray… (6 fotos) | Mesma palestra em inglês, São Paulo | Abertura da home, mosaicos, página de palestras | Publicadas sem nome da empresa |
 | `valinhosGroup` | Palestras/palestra-alex-cassimiro-inteligencia-emocional-para-voilier-em-valinho.jpeg | Foto de grupo, Valinhos (palestra de Gestão de Energia e Performance Sustentável; pedido inicial: gestão de tempo) | Experiências (home) e galeria de palestras; fora da página de IE | Publicada sem nome da empresa, composição horizontal preservada |
-| `valinhosPortrait` | Retratos/Perfil Palestra Voilier.jpeg | Retrato no dia da palestra em Valinhos | Hero da consultoria | Publicada sem nome da empresa |
+| `valinhosPortrait` | Retratos/Perfil Palestra Voilier.jpeg | Retrato no dia da palestra em Valinhos | Sem uso no momento: saiu da consultoria a pedido de Alex (19/11/2026), pois a consultoria é conduzida por Sergio | Publicada sem nome da empresa |
 | `sergioPortrait` | Drive: Sergio.jpeg (enviado com o documento "Atualizações Site", 19/11/2026) | Retrato do consultor parceiro Sergio Del Corso, fundo claro | Página de consultoria (apresentação do consultor) e JSON-LD | Aprovado pelo cliente |
 
 ## Documentos internos (não publicados)

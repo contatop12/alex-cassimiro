@@ -121,6 +121,8 @@ describe.skipIf(!built)('HTML gerado', () => {
       const consulting = read(routes.consulting[lang]);
       expect(consulting).toContain('Sergio Del Corso');
       expect(consulting).toContain('/img/sergioPortrait-');
+      // Retrato de Alex fora da consultoria (a consultoria é do Sergio)
+      expect(consulting).not.toContain('/img/valinhosPortrait-');
       // Valinhos foi gestão de energia e performance sustentável, não inteligência emocional
       expect(read(routes.ei[lang])).not.toContain('/img/valinhosGroup-');
       expect(read(routes.ei[lang])).not.toContain('Valinhos');
